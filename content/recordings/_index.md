@@ -1,4 +1,0 @@
----
-title: "Recordings"
-layout: "list"
----

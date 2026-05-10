@@ -1,0 +1,104 @@
+/* Import SonicDMG Terminal Font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505; /* Deep black */
+    color: #00ff41;           /* Matrix/Terminal Green */
+    font-family: 'VT323', monospace;
+    padding: 3rem;
+    margin: 0;
+    line-height: 1.1;
+    font-size: 1.4rem;        /* VT323 reads best slightly oversized */
+    letter-spacing: 0.5px;
+}
+
+/* Retro CRT Glow Effect */
+.terminal-content, pre, a {
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
+}
+
+/* ASCII Header Styling */
+pre {
+    font-family: 'VT323', monospace;
+    white-space: pre;
+    line-height: 1.0;          /* Tightened for ASCII art connectivity */
+    margin-bottom: 2rem;
+    color: #00ff41;
+    overflow-x: auto;          /* Prevents breaking on narrow screens */
+}
+
+/* Typography & Links */
+h1, h2, h3 {
+    text-transform: lowercase;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+a {
+    color: #00ff41;
+    text-decoration: none;
+    border: 1px solid #00ff41;
+    padding: 0 8px;
+    display: inline-block;
+    margin: 4px 0;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: #00ff41;
+    color: #050505;
+    text-shadow: none;
+}
+
+/* Terminal Cursor Emulation */
+.cursor {
+    display: inline-block;
+    width: 12px;
+    height: 24px;
+    background-color: #00ff41;
+    margin-left: 5px;
+    vertical-align: middle;
+    animation: blink 1s infinite;
+    box-shadow: 0 0 8px #00ff41;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+/* Layout Elements */
+hr {
+    border: none;
+    border-top: 2px solid #00ff41;
+    margin: 2rem 0;
+    opacity: 0.3;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li::before {
+    content: "> ";
+}
+
+/* Utility classes for "Wider Capabilities" */
+.status-online {
+    color: #00ff41;
+}
+
+.status-alert {
+    color: #ff0000;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}

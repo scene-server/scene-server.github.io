@@ -1,0 +1,10 @@
+{{ define "main" }}
+<pre>
+[archive: recordings.json]
+-----------------------------------------
+{{ range $.Site.Data.recordings }}
+> <a href="{{ .url }}">{{ .title | lower }}</a> | released: {{ .date }}
+{{ end }}
+-----------------------------------------
+</pre>
+{{ end }}

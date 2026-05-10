@@ -1,0 +1,11 @@
+{{ define "main" }}
+<pre>
+[archive_access: authorized]
+-----------------------------------------
+{{ range .Site.Data.recordings }}
+> <a href="{{ .url }}">{{ .title | lower }}</a> | {{ .date }}
+{{ end }}
+-----------------------------------------
+[status: end_of_file]
+</pre>
+{{ end }}

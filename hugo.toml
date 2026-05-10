@@ -1,4 +1,5 @@
-baseURL = 'https://scene-server.github.io/'
+#baseURL = 'https://scene-server.github.io/'
+baseURL = '/'
 languageCode = 'en-us'
 title = ':scene:server'
 

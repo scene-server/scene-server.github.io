@@ -1,6 +1,6 @@
 baseURL = 'https://scene-server.github.io/'
 languageCode = 'en-us'
-title = 'SCENESERVER // TERMINAL'
+title = ':scene:server'
 
 [params]
-    description = "Authentic scene recordings archive."
+    description = "digital basement archive"

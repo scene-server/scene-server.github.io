@@ -4,7 +4,6 @@
         "url": "http://sceneserver.net/data/200proof.mp3",
         "title": "Track 1",
         "artist": "Rextc",
-        "album": "200 Proof",
         "length_seconds": 4745.36
     },
     {
@@ -12,23 +11,20 @@
         "url": "http://sceneserver.net/data/20th-Anniversary-Mix.mp3",
         "title": "20th Anniversary Mix",
         "artist": "no artist",
-        "album": "no title",
         "length_seconds": 3450.81
     },
     {
         "filename": "aaronsimpson_dnbmix005_June2005.mp3",
         "url": "http://sceneserver.net/data/aaronsimpson_dnbmix005_June2005.mp3",
-        "title": "Unknown",
+        "title": "aaronsimpson dnbmix005 June2005",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3480.11
     },
     {
         "filename": "Alex Zelenka - A Classy Movement.mp3",
         "url": "http://sceneserver.net/data/Alex%20Zelenka%20-%20A%20Classy%20Movement.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "A Classy Movement",
+        "artist": "Alex Zelenka",
         "length_seconds": 3266.93
     },
     {
@@ -36,7 +32,6 @@
         "url": "http://sceneserver.net/data/alfonz%20dlm%20mix%20may%2005.mp3",
         "title": "alfonz dlm mix may 05",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3960.08
     },
     {
@@ -44,7 +39,6 @@
         "url": "http://sceneserver.net/data/All%20Aboard%20-%20Live%20Mix%20-%2005%20-%20L.A.%20Williams.mp3",
         "title": "L.A. Williams",
         "artist": "All Aboard",
-        "album": "Live Mix",
         "length_seconds": 86.45
     },
     {
@@ -52,7 +46,6 @@
         "url": "http://sceneserver.net/data/Andrew%20Salazar%20-%20PromoMix2004.mp3",
         "title": "Songs I LIke (Vol. 1)",
         "artist": "Andrew Salazar",
-        "album": "Unknown",
         "length_seconds": 892.28
     },
     {
@@ -60,7 +53,6 @@
         "url": "http://sceneserver.net/data/Angel-Alanis_Screw-You-Guys-Im-Going-Home_HOuse-Mix-07-27-05.mp3",
         "title": "Angel Alanis House Mix 07-2005",
         "artist": "Angel Alanis",
-        "album": "Unknown",
         "length_seconds": 4773.26
     },
     {
@@ -68,7 +60,6 @@
         "url": "http://sceneserver.net/data/apxmix.mp3",
         "title": "Spring Starter",
         "artist": "APX",
-        "album": "April Mix",
         "length_seconds": 3403.54
     },
     {
@@ -76,7 +67,6 @@
         "url": "http://sceneserver.net/data/Arum-AztecGold.mp3",
         "title": "Aztec Gold",
         "artist": "Arum",
-        "album": "Aztec Gold",
         "length_seconds": 3715.03
     },
     {
@@ -84,7 +74,6 @@
         "url": "http://sceneserver.net/data/ASC_-_DNBNation_Mix_3.mp3",
         "title": "DNBNation Exclusive Mix",
         "artist": "ASC",
-        "album": "Unknown",
         "length_seconds": 4301.95
     },
     {
@@ -92,39 +81,34 @@
         "url": "http://sceneserver.net/data/ashleylive.mp3",
         "title": "Track 01",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3534.95
     },
     {
         "filename": "audio-d BoxedAgencyMIX.mp3",
         "url": "http://sceneserver.net/data/audio-d%20BoxedAgencyMIX.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "d BoxedAgencyMIX",
+        "artist": "audio",
+        "length_seconds": 2268.06
     },
     {
         "filename": "BaD_RoBoT_-_Radd_Dope_Kings_(2005_Promo_Mix).mp3",
         "url": "http://sceneserver.net/data/BaD_RoBoT_-_Radd_Dope_Kings_%282005_Promo_Mix%29.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "Radd Dope Kings (2005 Promo Mix)",
+        "artist": "BaD RoBoT",
         "length_seconds": 3522.28
     },
     {
         "filename": "Bailey-Virus_Mix_Part2[1].mp3",
         "url": "http://sceneserver.net/data/Bailey-Virus_Mix_Part2%5B1%5D.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Virus Mix Part2[1]",
+        "artist": "Bailey",
+        "length_seconds": 2293.81
     },
     {
         "filename": "bassdrive.mp3",
         "url": "http://sceneserver.net/data/bassdrive.mp3",
         "title": "Bassdrive rip 13/3/04",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3735.9
     },
     {
@@ -132,31 +116,27 @@
         "url": "http://sceneserver.net/data/batts-august-mix.mp3",
         "title": "August quick mix",
         "artist": "Batts",
-        "album": "Unknown",
         "length_seconds": 2114.93
     },
     {
         "filename": "bizounce.mp3",
         "url": "http://sceneserver.net/data/bizounce.mp3",
-        "title": "Unknown",
+        "title": "bizounce",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2772.99
     },
     {
         "filename": "BONESMIXX.mp3",
         "url": "http://sceneserver.net/data/BONESMIXX.mp3",
-        "title": "Unknown",
+        "title": "BONESMIXX",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4406.31
     },
     {
         "filename": "Brandon Wahl - Mixed Emotions 4-11-05 Compressed.mp3",
         "url": "http://sceneserver.net/data/Brandon%20Wahl%20-%20Mixed%20Emotions%204-11-05%20Compressed.mp3",
         "title": "The Title",
         "artist": "The Author",
-        "album": "Album",
         "length_seconds": 4197.73
     },
     {
@@ -164,7 +144,6 @@
         "url": "http://sceneserver.net/data/Brandon%20Wahl%202001.mp3",
         "title": "Track  1",
         "artist": "Brandon Wahl",
-        "album": "2001",
         "length_seconds": 3527.6
     },
     {
@@ -172,15 +151,13 @@
         "url": "http://sceneserver.net/data/Brandon%20Wahl%204-8-2002.mp3",
         "title": "Brandon Wahl",
         "artist": "Brandon Wahl",
-        "album": "Free Stylin",
         "length_seconds": 4659.55
     },
     {
         "filename": "Brandon Wahl Live at the Bassment 12-7-03 128k.mp3",
         "url": "http://sceneserver.net/data/Brandon%20Wahl%20Live%20at%20the%20Bassment%2012-7-03%20128k.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "7 - 03 128k",
+        "artist": "Brandon Wahl Live at the Bassment 12",
         "length_seconds": 3948.57
     },
     {
@@ -188,87 +165,76 @@
         "url": "http://sceneserver.net/data/Breakin_on_Sunday___29__May__2005_hifi.mp3",
         "title": "Breakin' on Sunday   29 * May * 2005",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3160.11
     },
     {
         "filename": "BryanJones-WMCMix1.mp3",
         "url": "http://sceneserver.net/data/BryanJones-WMCMix1.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "WMCMix1",
+        "artist": "BryanJones",
+        "length_seconds": 4466.94
     },
     {
         "filename": "BryanJones-WMCMix2.mp3",
         "url": "http://sceneserver.net/data/BryanJones-WMCMix2.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "WMCMix2",
+        "artist": "BryanJones",
+        "length_seconds": 4768.84
     },
     {
         "filename": "CalyxDOAMixMay05.mp3",
         "url": "http://sceneserver.net/data/CalyxDOAMixMay05.mp3",
         "title": "Calyx DOA set May 05",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 5368.37
     },
     {
         "filename": "Chris.SU-Lost_In_The_Mix-July_2005.mp3",
         "url": "http://sceneserver.net/data/Chris.SU-Lost_In_The_Mix-July_2005.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Lost In The Mix - July 2005",
+        "artist": "Chris.SU",
+        "length_seconds": 3343.07
     },
     {
         "filename": "CKYTEP - Eggs Are Cute.mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Eggs%20Are%20Cute.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Eggs Are Cute",
+        "artist": "CKYTEP",
+        "length_seconds": 4211.67
     },
     {
         "filename": "CKYTEP - Live @ Electronic Groove Show (05 - 21 - 2004).mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Live%20%40%20Electronic%20Groove%20Show%20%2805%20-%2021%20-%202004%29.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Live @ Electronic Groove Show (05 - 21 - 2004)",
+        "artist": "CKYTEP",
+        "length_seconds": 4463.02
     },
     {
         "filename": "CKYTEP - Live @ Electronic Groove Show (05-09-2003).mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Live%20%40%20Electronic%20Groove%20Show%20%2805-09-2003%29.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "Live @ Electronic Groove Show (05 - 09 - 2003)",
+        "artist": "CKYTEP",
         "length_seconds": 3145.15
     },
     {
         "filename": "CKYTEP - Mmmm, Prog!.mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Mmmm%2C%20Prog%21.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Mmmm, Prog!",
+        "artist": "CKYTEP",
+        "length_seconds": 4664.91
     },
     {
         "filename": "CKYTEP - Never Trust A Russian That Doesn't Drink Vodka.mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Never%20Trust%20A%20Russian%20That%20Doesn%27t%20Drink%20Vodka.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "Never Trust A Russian That Doesn't Drink Vodka",
+        "artist": "CKYTEP",
         "length_seconds": 4674.4
     },
     {
         "filename": "CKYTEP - Skazka.mp3",
         "url": "http://sceneserver.net/data/CKYTEP%20-%20Skazka.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "Skazka",
+        "artist": "CKYTEP",
         "length_seconds": 3807.69
     },
     {
@@ -276,7 +242,6 @@
         "url": "http://sceneserver.net/data/CKYTEP%20-%20The%20Essential%20Guide%20Into%20The%20World%20Of%20Melodic%20Trance.mp3",
         "title": "The Essential Guide Into The World Of Melodic Trance",
         "artist": "CKYTEP",
-        "album": "Unknown",
         "length_seconds": 3900.74
     },
     {
@@ -284,7 +249,6 @@
         "url": "http://sceneserver.net/data/Clash%20Back%20-%20Live%20Mix%20-%2004%20-%20Sharki%20Maxx.mp3",
         "title": "Sharki Maxx",
         "artist": "Clash Back",
-        "album": "Live Mix",
         "length_seconds": 195.59
     },
     {
@@ -292,23 +256,20 @@
         "url": "http://sceneserver.net/data/Clay%20Watkins_Too%20Much%20House.mp3",
         "title": "Too Much House 2",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4627.47
     },
     {
         "filename": "club demo.mp3",
         "url": "http://sceneserver.net/data/club%20demo.mp3",
-        "title": "Unknown",
+        "title": "club demo",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2754.19
     },
     {
         "filename": "comfortablynumb.mp3",
         "url": "http://sceneserver.net/data/comfortablynumb.mp3",
         "title": "Comfortably Numb",
         "artist": "Pink Floyd",
-        "album": "The Wall",
         "length_seconds": 385.18
     },
     {
@@ -316,7 +277,6 @@
         "url": "http://sceneserver.net/data/counterstrike-BoxedAgency_mix.mp3",
         "title": "The Title",
         "artist": "The Author",
-        "album": "Album",
         "length_seconds": 3337.02
     },
     {
@@ -324,7 +284,6 @@
         "url": "http://sceneserver.net/data/daat.mp3",
         "title": "DA'AT",
         "artist": "EXT",
-        "album": "DA'AT - Winter 2001 Promo",
         "length_seconds": 3499.87
     },
     {
@@ -332,15 +291,13 @@
         "url": "http://sceneserver.net/data/Darin_Epsilon_-_Live_Mix_Sessions_One.mp3",
         "title": "* Live Mix Sessions ONE *",
         "artist": "Darin Epsilon",
-        "album": "-na-",
         "length_seconds": 4797.93
     },
     {
         "filename": "DAVE_THE_DRUMMER_WEMF_2003.mp3",
         "url": "http://sceneserver.net/data/DAVE_THE_DRUMMER_WEMF_2003.mp3",
-        "title": "Unknown",
+        "title": "DAVE THE DRUMMER WEMF 2003",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3951.71
     },
     {
@@ -348,79 +305,69 @@
         "url": "http://sceneserver.net/data/DecemberMix.mp3",
         "title": "DecemberMix",
         "artist": "APX",
-        "album": "Unknown",
         "length_seconds": 3684.49
     },
     {
         "filename": "dervish_monthly_mix_july_2004.mp3",
         "url": "http://sceneserver.net/data/dervish_monthly_mix_july_2004.mp3",
-        "title": "Unknown",
+        "title": "dervish monthly mix july 2004",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3983.3
     },
     {
         "filename": "Dinaire_TTT_April(fulll) (2).mp3",
         "url": "http://sceneserver.net/data/Dinaire_TTT_April%28fulll%29%20%282%29.mp3",
-        "title": "Unknown",
+        "title": "Dinaire TTT April(fulll) (2)",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3701.64
     },
     {
         "filename": "Dj BillyO -Hedonizm.mp3",
         "url": "http://sceneserver.net/data/Dj%20BillyO%20-Hedonizm.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Hedonizm",
+        "artist": "Dj BillyO",
+        "length_seconds": 4277.39
     },
     {
         "filename": "DJ Craze - Tampa 4-12-03.mp3",
         "url": "http://sceneserver.net/data/DJ%20Craze%20-%20Tampa%204-12-03.mp3",
         "title": "Track 1",
         "artist": "Unknown",
-        "album": "Unknown Album (5/22/2005 2:48:17 PM)",
         "length_seconds": 4734.62
     },
     {
         "filename": "DJ eXodus Sep. 05 Mix.mp3",
         "url": "http://sceneserver.net/data/DJ%20eXodus%20Sep.%2005%20Mix.mp3",
-        "title": "Unknown",
+        "title": "DJ eXodus Sep. 05 Mix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3510.05
     },
     {
         "filename": "DJ Jade - Inspiration [03.18.2005].mp3",
         "url": "http://sceneserver.net/data/DJ%20Jade%20-%20Inspiration%20%5B03.18.2005%5D.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Inspiration [03.18.2005]",
+        "artist": "DJ Jade",
+        "length_seconds": 3376.18
     },
     {
         "filename": "djgiltechmix.mp3",
         "url": "http://sceneserver.net/data/djgiltechmix.mp3",
-        "title": "Unknown",
+        "title": "djgiltechmix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3699.1
     },
     {
         "filename": "djp1LL - dec5 2004.mp3",
         "url": "http://sceneserver.net/data/djp1LL%20-%20dec5%202004.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "dec5 2004",
+        "artist": "djp1LL",
+        "length_seconds": 4430.47
     },
     {
         "filename": "dj_attak_-_april_darkness.mp3",
         "url": "http://sceneserver.net/data/dj_attak_-_april_darkness.mp3",
         "title": "destroydem",
         "artist": "djattak",
-        "album": "dest",
         "length_seconds": 2857.01
     },
     {
@@ -428,23 +375,20 @@
         "url": "http://sceneserver.net/data/dj_attak_-_full_out_attak_round_2.mp3",
         "title": "FULL OUT ATTAK ROUND 2",
         "artist": "DJ ATTAK",
-        "album": "Unknown",
         "length_seconds": 3515.46
     },
     {
         "filename": "DJ_C-Breakment.mp3",
         "url": "http://sceneserver.net/data/DJ_C-Breakment.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Breakment",
+        "artist": "DJ C",
+        "length_seconds": 4152.66
     },
     {
         "filename": "DJ_Entropy_-_Pure_Hardcore_For_The_Raving_Capitalists_2003.mp3",
         "url": "http://sceneserver.net/data/DJ_Entropy_-_Pure_Hardcore_For_The_Raving_Capitalists_2003.mp3",
         "title": "Pure Hardcore For The Raving Capitalists 2003",
         "artist": "DJ Entropy",
-        "album": "Pure Hardcore For The Raving Capitalists 2003",
         "length_seconds": 2773.57
     },
     {
@@ -452,7 +396,6 @@
         "url": "http://sceneserver.net/data/Dj_Goodwill.mp3",
         "title": "DnB Mix - Dj_Goodwill",
         "artist": "Goodwill",
-        "album": "DnB Mix",
         "length_seconds": 3599.6
     },
     {
@@ -460,39 +403,34 @@
         "url": "http://sceneserver.net/data/DJ_Hektik_-Faustrecht_%28Re-Mix_pt1_I%29.mp3",
         "title": "\"Faustrecht\" [Artist-Mix: Gridlok] Re-Mix pt.1 I - 'Double Trouble Hardcore'",
         "artist": "DJ Hektik",
-        "album": "playlist: http://www.trio-music.de/trio/data/tape_htk/",
         "length_seconds": 1757.43
     },
     {
         "filename": "dj_mes_miami_heat.mp3",
         "url": "http://sceneserver.net/data/dj_mes_miami_heat.mp3",
-        "title": "Unknown",
+        "title": "dj mes miami heat",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4770.19
     },
     {
         "filename": "DRAF-RandomOrganization(mix).mp3",
         "url": "http://sceneserver.net/data/DRAF-RandomOrganization%28mix%29.mp3",
         "title": "Random Organization",
         "artist": "D:Raf",
-        "album": "Mixx CD 3/04",
         "length_seconds": 4785.08
     },
     {
         "filename": "DRAF-Sine Language.mp3",
         "url": "http://sceneserver.net/data/DRAF-Sine%20Language.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Sine Language",
+        "artist": "DRAF",
+        "length_seconds": 4698.74
     },
     {
         "filename": "Drome - Live Mix - 10 - Joey Beltram.mp3",
         "url": "http://sceneserver.net/data/Drome%20-%20Live%20Mix%20-%2010%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
         "artist": "Drome",
-        "album": "Live Mix",
         "length_seconds": 218.86
     },
     {
@@ -500,39 +438,34 @@
         "url": "http://sceneserver.net/data/Drum%20and%20Bass%20Excursions%20Vol.%2010%20Live%20at%20the%20Dub%20Shack.mp3",
         "title": "Track 01",
         "artist": "DUB V/DJ 911",
-        "album": "Drum and Bass Excursions Vol. XIX",
         "length_seconds": 3974.15
     },
     {
         "filename": "dunamis_leftsideonly.mp3",
         "url": "http://sceneserver.net/data/dunamis_leftsideonly.mp3",
-        "title": "Unknown",
+        "title": "dunamis leftsideonly",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3676.65
     },
     {
         "filename": "dustinhiphopmix.mp3",
         "url": "http://sceneserver.net/data/dustinhiphopmix.mp3",
-        "title": "Unknown",
+        "title": "dustinhiphopmix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 674.12
     },
     {
         "filename": "dustinmichael.mp3",
         "url": "http://sceneserver.net/data/dustinmichael.mp3",
-        "title": "Unknown",
+        "title": "dustinmichael",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 1578.06
     },
     {
         "filename": "Dusty 12-10-04 Master.mp3",
         "url": "http://sceneserver.net/data/Dusty%2012-10-04%20Master.mp3",
         "title": "The Title",
         "artist": "The Author",
-        "album": "Album",
         "length_seconds": 4187.59
     },
     {
@@ -540,63 +473,55 @@
         "url": "http://sceneserver.net/data/DYKAST_MARCH04_STUDIOMIX.mp3",
         "title": "DYKAST MARCH STUDIO MIX",
         "artist": "DYKAST",
-        "album": "Unknown",
         "length_seconds": 4283.67
     },
     {
         "filename": "e21-45-min.mp3",
         "url": "http://sceneserver.net/data/e21-45-min.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "45 - min",
+        "artist": "e21",
+        "length_seconds": 2699.89
     },
     {
         "filename": "e21-atomicpossum.mp3",
         "url": "http://sceneserver.net/data/e21-atomicpossum.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "atomicpossum",
+        "artist": "e21",
+        "length_seconds": 5369.5
     },
     {
         "filename": "e21-brokenNRG.mp3",
         "url": "http://sceneserver.net/data/e21-brokenNRG.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "brokenNRG",
+        "artist": "e21",
+        "length_seconds": 3273.48
     },
     {
         "filename": "e21-stevebaltes.mp3",
         "url": "http://sceneserver.net/data/e21-stevebaltes.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "stevebaltes",
+        "artist": "e21",
+        "length_seconds": 3317.76
     },
     {
         "filename": "e21-working.mp3",
         "url": "http://sceneserver.net/data/e21-working.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "working",
+        "artist": "e21",
+        "length_seconds": 3325.62
     },
     {
         "filename": "e21.mp3",
         "url": "http://sceneserver.net/data/e21.mp3",
-        "title": "Unknown",
+        "title": "e21",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3464.62
     },
     {
         "filename": "EmpireX_n_ Kensi live mix 05.mp3",
         "url": "http://sceneserver.net/data/EmpireX_n_%20Kensi%20live%20mix%2005.mp3",
-        "title": "Unknown",
+        "title": "EmpireX n Kensi live mix 05",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4635.59
     },
     {
@@ -604,7 +529,6 @@
         "url": "http://sceneserver.net/data/Energy%20Flash%20-%20Live%20Mix%20-%2002%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
         "artist": "Energy Flash",
-        "album": "Live Mix",
         "length_seconds": 284.51
     },
     {
@@ -612,7 +536,6 @@
         "url": "http://sceneserver.net/data/Erotic%20Illusions%20-%20Live%20Mix%20-%2007%20-%20Abacus.mp3",
         "title": "Abacus",
         "artist": "Erotic Illusions",
-        "album": "Live Mix",
         "length_seconds": 191.75
     },
     {
@@ -620,7 +543,6 @@
         "url": "http://sceneserver.net/data/Evil%20Nine%20-%20Essential%20Mix%20%2803.20.2005%29.mp3",
         "title": "Essential Mix (03.20.2005)",
         "artist": "Evil Nine",
-        "album": "Unknown",
         "length_seconds": 7187.38
     },
     {
@@ -628,15 +550,13 @@
         "url": "http://sceneserver.net/data/ExecSt.mp3",
         "title": "Execution Style",
         "artist": "Rextc",
-        "album": "Execution Style",
         "length_seconds": 4355.95
     },
     {
         "filename": "FACTORe-BOTT.mp3",
         "url": "http://sceneserver.net/data/FACTORe-BOTT.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "BOTT",
+        "artist": "FACTORe",
         "length_seconds": 4698.38
     },
     {
@@ -644,7 +564,6 @@
         "url": "http://sceneserver.net/data/fitzpatrick_interstate.mp3",
         "title": "Fitzpatrick - Interstate Traveler",
         "artist": "Fitzpatrick",
-        "album": "Interstate Traveler",
         "length_seconds": 3873.41
     },
     {
@@ -652,15 +571,13 @@
         "url": "http://sceneserver.net/data/fitzpatrick_interstate2.mp3",
         "title": "Fitzpatrick",
         "artist": "Fitzpatrick",
-        "album": "Interstate Traveler Pt 2",
         "length_seconds": 4185.42
     },
     {
         "filename": "Flight102.mp3",
         "url": "http://sceneserver.net/data/Flight102.mp3",
-        "title": "Unknown",
+        "title": "Flight102",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4492.13
     },
     {
@@ -668,23 +585,20 @@
         "url": "http://sceneserver.net/data/From%20Beyond%20-%20Live%20Mix%20-%2008%20-%20Psyche.mp3",
         "title": "Psyche",
         "artist": "From Beyond",
-        "album": "Live Mix",
         "length_seconds": 210.16
     },
     {
         "filename": "ftatf.mp3",
         "url": "http://sceneserver.net/data/ftatf.mp3",
-        "title": "Unknown",
+        "title": "ftatf",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2024.02
     },
     {
         "filename": "Game Form - Live Mix - 12 - Joey Beltram.mp3",
         "url": "http://sceneserver.net/data/Game%20Form%20-%20Live%20Mix%20-%2012%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
         "artist": "Game Form",
-        "album": "Live Mix",
         "length_seconds": 66.8
     },
     {
@@ -692,7 +606,6 @@
         "url": "http://sceneserver.net/data/Game%20Form%205-08%20-%20Live%20Mix%20-%2014%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
         "artist": "Game Form 5:08",
-        "album": "Live Mix",
         "length_seconds": 309.3
     },
     {
@@ -700,7 +613,6 @@
         "url": "http://sceneserver.net/data/Game%20Form%206-28%20-%20Live%20Mix%20-%2015%20-%20Joey%20Beltram%20%28Robert%20Armani%20Remix%29.mp3",
         "title": "Joey Beltram (Robert Armani Remix)",
         "artist": "Game Form 6:28",
-        "album": "Live Mix",
         "length_seconds": 342.76
     },
     {
@@ -708,39 +620,34 @@
         "url": "http://sceneserver.net/data/Gimme%20Head%20-%20Live%20Mix%20-%2011%20-%20Rotortype.mp3",
         "title": "Rotortype",
         "artist": "Gimme Head",
-        "album": "Live Mix",
         "length_seconds": 152.54
     },
     {
         "filename": "goodness2002.mp3",
         "url": "http://sceneserver.net/data/goodness2002.mp3",
-        "title": "Unknown",
+        "title": "goodness2002",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2777.64
     },
     {
         "filename": "HeadKnockaH-Leathal Weapon Vol 1.mp3",
         "url": "http://sceneserver.net/data/HeadKnockaH-Leathal%20Weapon%20Vol%201.mp3",
         "title": "head",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4482.45
     },
     {
         "filename": "HighCaliber-AllOriginalMix.mp3",
         "url": "http://sceneserver.net/data/HighCaliber-AllOriginalMix.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "AllOriginalMix",
+        "artist": "HighCaliber",
+        "length_seconds": 4360.7
     },
     {
         "filename": "hraf-Still_Waters(house).mp3",
         "url": "http://sceneserver.net/data/hraf-Still_Waters%28house%29.mp3",
         "title": "Still Waters",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4723.75
     },
     {
@@ -748,7 +655,6 @@
         "url": "http://sceneserver.net/data/implex-DNBN_mix_pt2.mp3",
         "title": "Invasion mix pt 2 (russian dnb for DNBNation)",
         "artist": "Implex",
-        "album": "Unknown",
         "length_seconds": 3933.78
     },
     {
@@ -756,23 +662,20 @@
         "url": "http://sceneserver.net/data/Indigogirls-Wild%20Horses%20%28live%20w%20Michelle%20Malone%20%26%20Band%20de%20Soleil%29.mp3",
         "title": "Wild Horses (live w Michelle Malone & Band de Soleil)",
         "artist": "Indigo Girls",
-        "album": "Unknown",
         "length_seconds": 371.21
     },
     {
         "filename": "inferno.mp3",
         "url": "http://sceneserver.net/data/inferno.mp3",
-        "title": "Unknown",
+        "title": "inferno",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 1732.41
     },
     {
         "filename": "infiltrata boxed agency uk mix - wmc mix - spring break mix(courtesy www.djphear.com).mp3",
         "url": "http://sceneserver.net/data/infiltrata%20boxed%20agency%20uk%20mix%20-%20wmc%20mix%20-%20spring%20break%20mix%28courtesy%20www.djphear.com%29.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "wmc mix - spring break mix(courtesy www.djphear.com)",
+        "artist": "infiltrata boxed agency uk mix",
         "length_seconds": 4448.09
     },
     {
@@ -780,7 +683,6 @@
         "url": "http://sceneserver.net/data/infiltrata.mp3",
         "title": "infiltrata",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4263.47
     },
     {
@@ -788,15 +690,13 @@
         "url": "http://sceneserver.net/data/INI_DNBN_Studio_Mix_pt1_2005.mp3",
         "title": "DNBN STUDIO MIX - PT1",
         "artist": "INI",
-        "album": "Unknown",
         "length_seconds": 4635.67
     },
     {
         "filename": "jack ruby_and_mattstacks_livevil_21205.mp3",
         "url": "http://sceneserver.net/data/jack%20ruby_and_mattstacks_livevil_21205.mp3",
-        "title": "Unknown",
+        "title": "jack ruby and mattstacks livevil 21205",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3996.91
     },
     {
@@ -804,7 +704,6 @@
         "url": "http://sceneserver.net/data/jessesaunders128k.mp3",
         "title": "Track 01",
         "artist": "Jesse Saunders",
-        "album": "JS Mix 2001-1",
         "length_seconds": 2644.96
     },
     {
@@ -812,7 +711,6 @@
         "url": "http://sceneserver.net/data/Joe%20Black%20-%20August%2003%20Promo%20Mix.mp3",
         "title": "August 03 Promo Mix",
         "artist": "Joe Black",
-        "album": "Unknown",
         "length_seconds": 4242.66
     },
     {
@@ -820,7 +718,6 @@
         "url": "http://sceneserver.net/data/JohnB_DJMix_August2005.mp3",
         "title": "John B Studio DJ Mix August 2005",
         "artist": "Mixed By John B (Various)",
-        "album": "N/A",
         "length_seconds": 4271.46
     },
     {
@@ -828,39 +725,34 @@
         "url": "http://sceneserver.net/data/joshuah-wings_wax_%26_emily%20travis.mp3",
         "title": "joshuah-GS3 wings_wax_&_emily travis",
         "artist": "joshuah",
-        "album": "GS3 Wings, Wax, & Emily Travis",
         "length_seconds": 4471.96
     },
     {
         "filename": "josh_von_satisfaction_liveset_spring_05_promo_320_kbps.mp3",
         "url": "http://sceneserver.net/data/josh_von_satisfaction_liveset_spring_05_promo_320_kbps.mp3",
-        "title": "Unknown",
+        "title": "josh von satisfaction liveset spring 05 promo 320 kbps",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2656.05
     },
     {
         "filename": "JuanZapata_octobermix.mp3",
         "url": "http://sceneserver.net/data/JuanZapata_octobermix.mp3",
-        "title": "Unknown",
+        "title": "JuanZapata octobermix",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4596.12
     },
     {
         "filename": "JuneMix.mp3",
         "url": "http://sceneserver.net/data/JuneMix.mp3",
-        "title": "Unknown",
+        "title": "JuneMix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2919.94
     },
     {
         "filename": "justindeep.mp3",
         "url": "http://sceneserver.net/data/justindeep.mp3",
         "title": "Justin Matthews Deep Vocal Mix",
         "artist": "Justin Matthews",
-        "album": "Unknown",
         "length_seconds": 3819.03
     },
     {
@@ -868,7 +760,6 @@
         "url": "http://sceneserver.net/data/justingospel.mp3",
         "title": "Justin Matthews Vocal Gospel M",
         "artist": "Justin Matthews",
-        "album": "Unknown",
         "length_seconds": 3588.55
     },
     {
@@ -876,23 +767,20 @@
         "url": "http://sceneserver.net/data/Kace_Andyslim_Assimilation_96.mp3",
         "title": "Assimilation Mix",
         "artist": "Kace & Andyslim",
-        "album": "Unknown",
         "length_seconds": 4781.97
     },
     {
         "filename": "Kamikaze-DeathWithin10Paces.mp3",
         "url": "http://sceneserver.net/data/Kamikaze-DeathWithin10Paces.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "DeathWithin10Paces",
+        "artist": "Kamikaze",
+        "length_seconds": 3444.61
     },
     {
         "filename": "kileak_8am_adams_street.mp3",
         "url": "http://sceneserver.net/data/kileak_8am_adams_street.mp3",
         "title": "8am Adams Street",
         "artist": "Kileak",
-        "album": "8am Adams Street",
         "length_seconds": 2764.34
     },
     {
@@ -900,79 +788,69 @@
         "url": "http://sceneserver.net/data/knocturnal-skandalmc-march-05.mp3",
         "title": "jungle ravers minimix 192",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 1824.06
     },
     {
         "filename": "KtLiveatUltra2.mp3",
         "url": "http://sceneserver.net/data/KtLiveatUltra2.mp3",
-        "title": "Unknown",
+        "title": "KtLiveatUltra2",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4670.8
     },
     {
         "filename": "lab3 cd.mp3",
         "url": "http://sceneserver.net/data/lab3%20cd.mp3",
-        "title": "Unknown",
+        "title": "lab3 cd",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3496.29
     },
     {
         "filename": "LilCory-Body.mp3",
         "url": "http://sceneserver.net/data/LilCory-Body.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "Body",
+        "artist": "LilCory",
         "length_seconds": 4446.81
     },
     {
         "filename": "lovebomb.mp3",
         "url": "http://sceneserver.net/data/lovebomb.mp3",
-        "title": "Unknown",
+        "title": "lovebomb",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3257.47
     },
     {
         "filename": "MANN-ETREAVOR.mp3",
         "url": "http://sceneserver.net/data/MANN-ETREAVOR.mp3",
         "title": "The Calling",
         "artist": "MANN-Ë TREAVOR",
-        "album": "The Calling - 12-20-02",
         "length_seconds": 1731.85
     },
     {
         "filename": "Masheen & Kano - In The Lab 2007 Mix.mp3",
         "url": "http://sceneserver.net/data/Masheen%20%26%20Kano%20-%20In%20The%20Lab%202007%20Mix.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "In The Lab 2007 Mix",
+        "artist": "Masheen & Kano",
+        "length_seconds": 3976.09
     },
     {
         "filename": "Matrix_-_Live_at_Transfer_Atlanta_Feb-20-2005.mp3",
         "url": "http://sceneserver.net/data/Matrix_-_Live_at_Transfer_Atlanta_Feb-20-2005.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Live at Transfer Atlanta Feb - 20 - 2005",
+        "artist": "Matrix",
+        "length_seconds": 8872.18
     },
     {
         "filename": "Matthias Gewalt - The 'H' Is Silent.mp3",
         "url": "http://sceneserver.net/data/Matthias%20Gewalt%20-%20The%20%27H%27%20Is%20Silent.mp3",
         "title": "The 'H' Is Silent",
         "artist": "Matthias Gewalt",
-        "album": "Matthias Gewalt - The 'H' Is S",
         "length_seconds": 3879.14
     },
     {
         "filename": "MatthiasGewalt-DiscokaT.mp3",
         "url": "http://sceneserver.net/data/MatthiasGewalt-DiscokaT.mp3",
-        "title": "Unknown",
-        "artist": "Matthias Gewalt",
-        "album": "Disco kaT",
+        "title": "DiscokaT",
+        "artist": "MatthiasGewalt",
         "length_seconds": 3616.35
     },
     {
@@ -980,7 +858,6 @@
         "url": "http://sceneserver.net/data/MD_test1_newest%20mix%20prep.mp3",
         "title": "DOWNBEAT",
         "artist": "DJ ben blue",
-        "album": "Unknown",
         "length_seconds": 4783.59
     },
     {
@@ -988,7 +865,6 @@
         "url": "http://sceneserver.net/data/Mehdispoz-mix%40April-2005.mp3",
         "title": "DJ mix By Mehdispoz April 2005",
         "artist": "Mhd Aka Mehdispoz",
-        "album": "S-sens Records Project 07",
         "length_seconds": 3300.13
     },
     {
@@ -996,7 +872,6 @@
         "url": "http://sceneserver.net/data/MikeAllison-BDDR.mp3",
         "title": "BangingDirtyDiscoRagga",
         "artist": "Mike Allison",
-        "album": "BanginDirtyDiscoRagga",
         "length_seconds": 3578.81
     },
     {
@@ -1004,47 +879,41 @@
         "url": "http://sceneserver.net/data/Mikie%20Smithers.mp3.mp3",
         "title": "Audio CD",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 1585.5
     },
     {
         "filename": "Milithor-AmbientAmnesia.mp3",
         "url": "http://sceneserver.net/data/Milithor-AmbientAmnesia.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "AmbientAmnesia",
+        "artist": "Milithor",
+        "length_seconds": 4176.12
     },
     {
         "filename": "Milithor-HaveYouSeenMe.mp3",
         "url": "http://sceneserver.net/data/Milithor-HaveYouSeenMe.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "HaveYouSeenMe",
+        "artist": "Milithor",
+        "length_seconds": 3435.15
     },
     {
         "filename": "Milithor-TheJourney.mp3",
         "url": "http://sceneserver.net/data/Milithor-TheJourney.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "TheJourney",
+        "artist": "Milithor",
+        "length_seconds": 4184.45
     },
     {
         "filename": "movement.mp3",
         "url": "http://sceneserver.net/data/movement.mp3",
-        "title": "Unknown",
+        "title": "movement",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 1558.26
     },
     {
         "filename": "mumblzandmcoverride.mp3",
         "url": "http://sceneserver.net/data/mumblzandmcoverride.mp3",
         "title": "Mumblz Mix",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4689.46
     },
     {
@@ -1052,71 +921,62 @@
         "url": "http://sceneserver.net/data/My%20Medusa%20-%20Live%20Mix%20-%2009%20-%20K.%20Alexi%20Shelby.mp3",
         "title": "K. Alexi Shelby",
         "artist": "My Medusa",
-        "album": "Live Mix",
         "length_seconds": 180.38
     },
     {
         "filename": "Neuro-8-10-05.mp3",
         "url": "http://sceneserver.net/data/Neuro-8-10-05.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "8 - 10 - 05",
+        "artist": "Neuro",
+        "length_seconds": 4139.13
     },
     {
         "filename": "neuro-smokedout.mp3",
         "url": "http://sceneserver.net/data/neuro-smokedout.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "smokedout",
+        "artist": "neuro",
+        "length_seconds": 3880.28
     },
     {
         "filename": "noise_in_my_head_mix_jimmyx.mp3",
         "url": "http://sceneserver.net/data/noise_in_my_head_mix_jimmyx.mp3",
         "title": "Noise in my head mix",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3428.08
     },
     {
         "filename": "npm-live-mix-1.mp3",
         "url": "http://sceneserver.net/data/npm-live-mix-1.mp3",
-        "title": "Unknown",
-        "artist": "DJ Coltrane-Rexx",
-        "album": "Unknown",
+        "title": "live - mix - 1",
+        "artist": "npm",
         "length_seconds": 3963.32
     },
     {
         "filename": "nuclear-e21-2.11.03.mp3",
         "url": "http://sceneserver.net/data/nuclear-e21-2.11.03.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "e21 - 2.11.03",
+        "artist": "nuclear",
+        "length_seconds": 1801.2
     },
     {
         "filename": "OGO - Live Mix - 01 - Joey Beltram.mp3",
         "url": "http://sceneserver.net/data/OGO%20-%20Live%20Mix%20-%2001%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
         "artist": "OGO",
-        "album": "Live Mix",
         "length_seconds": 72.99
     },
     {
         "filename": "Ohio Mix.mp3",
         "url": "http://sceneserver.net/data/Ohio%20Mix.mp3",
-        "title": "Unknown",
+        "title": "Ohio Mix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3531.36
     },
     {
         "filename": "Pacific-Oct_Studio_Mix.mp3",
         "url": "http://sceneserver.net/data/Pacific-Oct_Studio_Mix.mp3",
         "title": "October Studio Mix",
         "artist": "Pacific",
-        "album": "Unknown",
         "length_seconds": 4644.05
     },
     {
@@ -1124,23 +984,20 @@
         "url": "http://sceneserver.net/data/paul%20oakenfold%20-%20Oakenfold-Traveling%20CD2.mp3",
         "title": "Oakenfold-Travelling CD2",
         "artist": "Paul Oakenfold",
-        "album": "Travelling, Perfecto label",
         "length_seconds": 2402.9
     },
     {
         "filename": "PaulAnthony-Live@Transit.mp3",
         "url": "http://sceneserver.net/data/PaulAnthony-Live%40Transit.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Live@Transit",
+        "artist": "PaulAnthony",
+        "length_seconds": 3751.28
     },
     {
         "filename": "paulb_nuborn10.mp3",
         "url": "http://sceneserver.net/data/paulb_nuborn10.mp3",
         "title": "Nuborn Mixes - Mix 10",
         "artist": "Paul B",
-        "album": "Unknown",
         "length_seconds": 2772.84
     },
     {
@@ -1148,39 +1005,34 @@
         "url": "http://sceneserver.net/data/paulb_nuborn12.mp3",
         "title": "Nuborn Mixes - Mix 12",
         "artist": "Paul B",
-        "album": "Unknown",
         "length_seconds": 2859.16
     },
     {
         "filename": "pauledgelive.mp3",
         "url": "http://sceneserver.net/data/pauledgelive.mp3",
-        "title": "Unknown",
+        "title": "pauledgelive",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4318.16
     },
     {
         "filename": "PaulReset-NerveDnBNation.mp3",
         "url": "http://sceneserver.net/data/PaulReset-NerveDnBNation.mp3",
         "title": "DnBNation - Nerve promo mix",
         "artist": "Mixed by Paul Reset",
-        "album": "Unknown",
         "length_seconds": 2487.78
     },
     {
         "filename": "phace__dnbnation_mix.mp3",
         "url": "http://sceneserver.net/data/phace__dnbnation_mix.mp3",
-        "title": "Unknown",
+        "title": "phace dnbnation mix",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2424.58
     },
     {
         "filename": "Prodigy%20-%20Live%20PA%20at%20Amnesia%20House%201991[1].mp3",
         "url": "http://sceneserver.net/data/Prodigy%2520-%2520Live%2520PA%2520at%2520Amnesia%2520House%25201991%5B1%5D.mp3",
         "title": "Live PA at Amnesia House 1991",
         "artist": "Prodigy",
-        "album": "Amnesia House",
         "length_seconds": 1501.68
     },
     {
@@ -1188,7 +1040,6 @@
         "url": "http://sceneserver.net/data/Pump%20It%20-%20Live%20Mix%20-%2013%20-%20DJ%20Funk.mp3",
         "title": "DJ Funk",
         "artist": "Pump It",
-        "album": "Live Mix",
         "length_seconds": 152.35
     },
     {
@@ -1196,7 +1047,6 @@
         "url": "http://sceneserver.net/data/purple_unit_-_dnbnation_mix.mp3",
         "title": "dnbnation.com mix",
         "artist": "purple unit",
-        "album": "Unknown",
         "length_seconds": 3045.94
     },
     {
@@ -1204,7 +1054,6 @@
         "url": "http://sceneserver.net/data/QuadrantMix-2-8-2005.mp3",
         "title": "QuadrantMix-2-8-2005",
         "artist": "Quadrant",
-        "album": "Unknown",
         "length_seconds": 4295.11
     },
     {
@@ -1212,31 +1061,27 @@
         "url": "http://sceneserver.net/data/raggadann.mp3",
         "title": "No01",
         "artist": "Track",
-        "album": "Unknown",
         "length_seconds": 1324.6
     },
     {
         "filename": "rawkiss demo Jan  2004.mp3",
         "url": "http://sceneserver.net/data/rawkiss%20demo%20Jan%20%202004.mp3",
-        "title": "Unknown",
+        "title": "rawkiss demo Jan 2004",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3411.73
     },
     {
         "filename": "rees.urban.live.libido.mp3",
         "url": "http://sceneserver.net/data/rees.urban.live.libido.mp3",
-        "title": "Unknown",
+        "title": "rees.urban.live.libido",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3168.82
     },
     {
         "filename": "rezon8-technologicalbreaks.mp3",
         "url": "http://sceneserver.net/data/rezon8-technologicalbreaks.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "technologicalbreaks",
+        "artist": "rezon8",
         "length_seconds": 4635.04
     },
     {
@@ -1244,7 +1089,6 @@
         "url": "http://sceneserver.net/data/rl.mp3",
         "title": "Required Listening",
         "artist": "EXT",
-        "album": "Required Listening - Summer 20",
         "length_seconds": 3840.02
     },
     {
@@ -1252,7 +1096,6 @@
         "url": "http://sceneserver.net/data/Runnin%20-%20Live%20Mix%20-%2006%20-%20DJ%20Milton.mp3",
         "title": "DJ Milton",
         "artist": "Runnin",
-        "album": "Live Mix",
         "length_seconds": 93.42
     },
     {
@@ -1260,87 +1103,76 @@
         "url": "http://sceneserver.net/data/saigon_loaded.mp3",
         "title": "Loaded Saturdays - System Soundbar",
         "artist": "DJ Saigon - MC Caddy Cad",
-        "album": "Loaded Saturdays - System Soundbar",
         "length_seconds": 4453.62
     },
     {
         "filename": "scottnelsen.mp3",
         "url": "http://sceneserver.net/data/scottnelsen.mp3",
-        "title": "Unknown",
+        "title": "scottnelsen",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4016.04
     },
     {
         "filename": "Self Preservation - Live Mix - 03 - MD Connection.mp3",
         "url": "http://sceneserver.net/data/Self%20Preservation%20-%20Live%20Mix%20-%2003%20-%20MD%20Connection.mp3",
         "title": "MD Connection",
         "artist": "Self Preservation",
-        "album": "Live Mix",
         "length_seconds": 62.15
     },
     {
         "filename": "servinitdeep.mp3",
         "url": "http://sceneserver.net/data/servinitdeep.mp3",
-        "title": "Unknown",
+        "title": "servinitdeep",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4134.34
     },
     {
         "filename": "set yourself on fire.mp3",
         "url": "http://sceneserver.net/data/set%20yourself%20on%20fire.mp3",
-        "title": "Unknown",
+        "title": "set yourself on fire",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3439.12
     },
     {
         "filename": "shahram_oct24_03.mp3",
         "url": "http://sceneserver.net/data/shahram_oct24_03.mp3",
-        "title": "Unknown",
+        "title": "shahram oct24 03",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3405.48
     },
     {
         "filename": "Shiloh - DJ Set On Annie Nightingale (2004-07-12).mp3",
         "url": "http://sceneserver.net/data/Shiloh%20-%20DJ%20Set%20On%20Annie%20Nightingale%20%282004-07-12%29.mp3",
         "title": "DJ Set On Annie Nightingale",
         "artist": "Shiloh",
-        "album": "2004-07-12",
         "length_seconds": 1904.03
     },
     {
         "filename": "sister.mp3",
         "url": "http://sceneserver.net/data/sister.mp3",
-        "title": "Unknown",
+        "title": "sister",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 2336.77
     },
     {
         "filename": "Skroob - Townsley's Groove.mp3",
         "url": "http://sceneserver.net/data/Skroob%20-%20Townsley%27s%20Groove.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "Townsley's Groove",
+        "artist": "Skroob",
+        "length_seconds": 4588.62
     },
     {
         "filename": "smirk_blitzkrieg.mp3",
         "url": "http://sceneserver.net/data/smirk_blitzkrieg.mp3",
         "title": "Blitzkrieg",
         "artist": "Smirk",
-        "album": "Blitzkrieg",
         "length_seconds": 3962.89
     },
     {
         "filename": "somewhereelse.mp3",
         "url": "http://sceneserver.net/data/somewhereelse.mp3",
-        "title": "Unknown",
+        "title": "somewhereelse",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4797.89
     },
     {
@@ -1348,7 +1180,6 @@
         "url": "http://sceneserver.net/data/SPL-RescueMe.mp3",
         "title": "Rescue Me",
         "artist": "SPL",
-        "album": "Unknown",
         "length_seconds": 4308.04
     },
     {
@@ -1356,7 +1187,6 @@
         "url": "http://sceneserver.net/data/ss140605.mp3",
         "title": "ss140605",
         "artist": "Elite Force (on the mix) with JDS",
-        "album": "Unknown",
         "length_seconds": 10823.97
     },
     {
@@ -1364,7 +1194,6 @@
         "url": "http://sceneserver.net/data/Steele_Tonght_TC.mp3",
         "title": "Steele_Tonght_TC",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 87.72
     },
     {
@@ -1372,71 +1201,62 @@
         "url": "http://sceneserver.net/data/Steve%20Porter%20-%20Live%20at%20Space%2C%20Miami%20-%2007_09_2005.mp3",
         "title": "Steve Porter - Live at Space, Miami - 07/09/2005 ",
         "artist": "Sp dj mix",
-        "album": "Unknown",
         "length_seconds": 3603.04
     },
     {
         "filename": "Strategically-ill_collision_course.mp3",
         "url": "http://sceneserver.net/data/Strategically-ill_collision_course.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
+        "title": "ill collision course",
+        "artist": "Strategically",
         "length_seconds": 3717.32
     },
     {
         "filename": "strategiklee-ill_nuflava.mp3",
         "url": "http://sceneserver.net/data/strategiklee-ill_nuflava.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "ill nuflava",
+        "artist": "strategiklee",
+        "length_seconds": 2386.0
     },
     {
         "filename": "SUBCONSCIOUS dj rawkiss BoxedAgency 2004 Mix.mp3",
         "url": "http://sceneserver.net/data/SUBCONSCIOUS%20dj%20rawkiss%20BoxedAgency%202004%20Mix.mp3",
-        "title": "Unknown",
+        "title": "SUBCONSCIOUS dj rawkiss BoxedAgency 2004 Mix",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3411.73
     },
     {
         "filename": "Submerge101-WMCMix.mp3",
         "url": "http://sceneserver.net/data/Submerge101-WMCMix.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "WMCMix",
+        "artist": "Submerge101",
+        "length_seconds": 4034.61
     },
     {
         "filename": "sweetnflo.mp3",
         "url": "http://sceneserver.net/data/sweetnflo.mp3",
-        "title": "Unknown",
+        "title": "sweetnflo",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4670.28
     },
     {
         "filename": "TechHouse Mix by Gil mp3.mp3",
         "url": "http://sceneserver.net/data/TechHouse%20Mix%20by%20Gil%20mp3.mp3",
-        "title": "Unknown",
+        "title": "TechHouse Mix by Gil mp3",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4321.07
     },
     {
         "filename": "technoiz4pussies.mp3",
         "url": "http://sceneserver.net/data/technoiz4pussies.mp3",
-        "title": "Unknown",
+        "title": "technoiz4pussies",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3016.75
     },
     {
         "filename": "TerrenceParkerMIX.mp3",
         "url": "http://sceneserver.net/data/TerrenceParkerMIX.mp3",
         "title": "TP's Web Radio Mix  - March 20, 2005",
         "artist": "Terrence Parker",
-        "album": "Web Radio Mix - March 20, 2005",
         "length_seconds": 4769.03
     },
     {
@@ -1444,191 +1264,167 @@
         "url": "http://sceneserver.net/data/TerrenceParkerMIX2.mp3",
         "title": "Web Radio Inspirational House Mix # 1",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix",
         "length_seconds": 4716.29
     },
     {
         "filename": "Thump Radio-128k.mp3",
         "url": "http://sceneserver.net/data/Thump%20Radio-128k.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "128k",
+        "artist": "Thump Radio",
+        "length_seconds": 3572.58
     },
     {
         "filename": "toinfinityandbeyond2002.mp3",
         "url": "http://sceneserver.net/data/toinfinityandbeyond2002.mp3",
-        "title": "Unknown",
+        "title": "toinfinityandbeyond2002",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 3248.95
     },
     {
         "filename": "Tony_Foo_Yong--Michael_Jackson_Mix.mp3",
         "url": "http://sceneserver.net/data/Tony_Foo_Yong--Michael_Jackson_Mix.mp3",
         "title": "michaeljacksoncd",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3538.37
     },
     {
         "filename": "tpmixshow11.mp3",
         "url": "http://sceneserver.net/data/tpmixshow11.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow11",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4650.19
     },
     {
         "filename": "tpmixshow12.mp3",
         "url": "http://sceneserver.net/data/tpmixshow12.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow12",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4748.96
     },
     {
         "filename": "tpmixshow13.mp3",
         "url": "http://sceneserver.net/data/tpmixshow13.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow13",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5479.08
     },
     {
         "filename": "tpmixshow14.mp3",
         "url": "http://sceneserver.net/data/tpmixshow14.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow14",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4535.67
     },
     {
         "filename": "tpmixshow15.mp3",
         "url": "http://sceneserver.net/data/tpmixshow15.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow15",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2475.52
     },
     {
         "filename": "tpmixshow16.mp3",
         "url": "http://sceneserver.net/data/tpmixshow16.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow16",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5433.26
     },
     {
         "filename": "tpmixshow17.mp3",
         "url": "http://sceneserver.net/data/tpmixshow17.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow17",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4502.28
     },
     {
         "filename": "tpmixshow18.mp3",
         "url": "http://sceneserver.net/data/tpmixshow18.mp3",
         "title": "DJ Mo Reese Hump Factor Vol 3",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 4613.29
     },
     {
         "filename": "tpmixshow19.mp3",
         "url": "http://sceneserver.net/data/tpmixshow19.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow19",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4808.33
     },
     {
         "filename": "tpmixshow20.mp3",
         "url": "http://sceneserver.net/data/tpmixshow20.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow20",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 6111.24
     },
     {
         "filename": "tpmixshow21.mp3",
         "url": "http://sceneserver.net/data/tpmixshow21.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow21",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4762.8
     },
     {
         "filename": "tpmixshow24.mp3",
         "url": "http://sceneserver.net/data/tpmixshow24.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow24",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4781.79
     },
     {
         "filename": "tpmixshow26.mp3",
         "url": "http://sceneserver.net/data/tpmixshow26.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow26",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5224.93
     },
     {
         "filename": "tpmixshow27.mp3",
         "url": "http://sceneserver.net/data/tpmixshow27.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow27",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5565.2
     },
     {
         "filename": "tpmixshow29.mp3",
         "url": "http://sceneserver.net/data/tpmixshow29.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow29",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5211.25
     },
     {
         "filename": "tpmixshow30.mp3",
         "url": "http://sceneserver.net/data/tpmixshow30.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow30",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5405.65
     },
     {
         "filename": "tpmixshow32.mp3",
         "url": "http://sceneserver.net/data/tpmixshow32.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow32",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5167.67
     },
     {
         "filename": "tpmixshow33.mp3",
         "url": "http://sceneserver.net/data/tpmixshow33.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow33",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 5368.97
     },
     {
         "filename": "tpmixshow36.mp3",
         "url": "http://sceneserver.net/data/tpmixshow36.mp3",
-        "title": "Unknown",
+        "title": "tpmixshow36",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4757.39
     },
     {
         "filename": "tpmixshow5.mp3",
         "url": "http://sceneserver.net/data/tpmixshow5.mp3",
         "title": "Inspirational House Mix Show # 5",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix Show",
         "length_seconds": 4722.03
     },
     {
@@ -1636,7 +1432,6 @@
         "url": "http://sceneserver.net/data/tpmixshow6.mp3",
         "title": "Inspirational House Mix Show # 6",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix",
         "length_seconds": 4788.54
     },
     {
@@ -1644,7 +1439,6 @@
         "url": "http://sceneserver.net/data/tpmixshow7.mp3",
         "title": "Inspirational House Mix Show # 7",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix",
         "length_seconds": 4080.99
     },
     {
@@ -1652,7 +1446,6 @@
         "url": "http://sceneserver.net/data/tpmixshow8.mp3",
         "title": "Inspirational House Mix Show # 8",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix",
         "length_seconds": 4736.9
     },
     {
@@ -1660,111 +1453,97 @@
         "url": "http://sceneserver.net/data/tpmixshow9.mp3",
         "title": "Inspirational House Mix Show # 9",
         "artist": "Terrence Parker",
-        "album": "Inspirational House Mix Show",
         "length_seconds": 4281.79
     },
     {
         "filename": "trevor old school 2.mp3",
         "url": "http://sceneserver.net/data/trevor%20old%20school%202.mp3",
-        "title": "Unknown",
+        "title": "trevor old school 2",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2718.9
     },
     {
         "filename": "trevor old school.mp3",
         "url": "http://sceneserver.net/data/trevor%20old%20school.mp3",
-        "title": "Unknown",
+        "title": "trevor old school",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2739.51
     },
     {
         "filename": "trevor_old_school.mp3",
         "url": "http://sceneserver.net/data/trevor_old_school.mp3",
-        "title": "Unknown",
+        "title": "trevor old school",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2739.51
     },
     {
         "filename": "trevor_old_school_2.mp3",
         "url": "http://sceneserver.net/data/trevor_old_school_2.mp3",
-        "title": "Unknown",
+        "title": "trevor old school 2",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2718.9
     },
     {
         "filename": "tribute.mp3",
         "url": "http://sceneserver.net/data/tribute.mp3",
-        "title": "Unknown",
+        "title": "tribute",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 4225.38
     },
     {
         "filename": "turbine_may05_static.mp3",
         "url": "http://sceneserver.net/data/turbine_may05_static.mp3",
-        "title": "Unknown",
+        "title": "turbine may05 static",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 2758.55
     },
     {
         "filename": "turbo-e21-3.4.03.mp3",
         "url": "http://sceneserver.net/data/turbo-e21-3.4.03.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "e21 - 3.4.03",
+        "artist": "turbo",
+        "length_seconds": 2866.96
     },
     {
         "filename": "Twodrinkminimum.mp3",
         "url": "http://sceneserver.net/data/Twodrinkminimum.mp3",
-        "title": "Unknown",
+        "title": "Twodrinkminimum",
         "artist": "Unknown",
-        "album": "Unknown",
         "length_seconds": 3926.03
     },
     {
         "filename": "Tyler C - June Demo Mix.mp3",
         "url": "http://sceneserver.net/data/Tyler%20C%20-%20June%20Demo%20Mix.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "June Demo Mix",
+        "artist": "Tyler C",
+        "length_seconds": 3715.68
     },
     {
         "filename": "wedrec.mp3",
         "url": "http://sceneserver.net/data/wedrec.mp3",
-        "title": "Unknown",
+        "title": "wedrec",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 8667.9
     },
     {
         "filename": "whirlwind.mp3",
         "url": "http://sceneserver.net/data/whirlwind.mp3",
-        "title": "Unknown",
+        "title": "whirlwind",
         "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "length_seconds": 1792.99
     },
     {
         "filename": "wizard_-_dnbnation_mix.mp3",
         "url": "http://sceneserver.net/data/wizard_-_dnbnation_mix.mp3",
-        "title": "Unknown",
-        "artist": "Unknown",
-        "album": "Unknown",
-        "length_seconds": 0
+        "title": "dnbnation mix",
+        "artist": "wizard",
+        "length_seconds": 4562.82
     },
     {
         "filename": "ZenKnee_NoPretenses_128.mp3",
         "url": "http://sceneserver.net/data/ZenKnee_NoPretenses_128.mp3",
-        "title": "Unknown",
+        "title": "ZenKnee NoPretenses 128",
         "artist": "ZenKnee (Dave Cross)",
-        "album": "No Pretenses",
         "length_seconds": 3658.76
     }
 ]

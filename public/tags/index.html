@@ -1,4 +1,13 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Tags | :scene:server</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
     <pre>
    _____                                                               
   / ___/_________  ____  ___  ________  ______   _____  _____ 
@@ -11,18 +20,14 @@
 
     <div class="terminal-content">
         <h1>recordings</h1>
-        {{ .Content }}
+        
 
         <ul>
-        {{ range .Pages.ByDate.Reverse }}
-            <li>
-                <a href="{{ .RelPermalink }}">
-                    {{ .Date.Format "2006-01-02" }} &nbsp;&nbsp; {{ .Title }}
-                </a>
-            </li>
-        {{ end }}
+        
         </ul>
 
         <span class="cursor"></span>
     </div>
-{{ end }}
+
+</body>
+</html>

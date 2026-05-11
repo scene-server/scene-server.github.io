@@ -10,18 +10,10 @@
     <hr>
 
     <div class="terminal-content">
-        <h1>recordings</h1>
+        <h1>{{ .Title }}</h1>
+        <p><small>Recorded: {{ .Date.Format "January 2, 2006" }}</small></p>
+        
         {{ .Content }}
-
-        <ul>
-        {{ range .Pages.ByDate.Reverse }}
-            <li>
-                <a href="{{ .RelPermalink }}">
-                    {{ .Date.Format "2006-01-02" }} &nbsp;&nbsp; {{ .Title }}
-                </a>
-            </li>
-        {{ end }}
-        </ul>
 
         <span class="cursor"></span>
     </div>

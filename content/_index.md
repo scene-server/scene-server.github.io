@@ -2,10 +2,10 @@
 title: "Login"
 ---
 
-**SCENESERVER V1.0.4 **
+**SCENESERVER V1.0.5 **
 **CONNECTION ESTABLISHED...**
 
-welcome to **:scene:server** 
+welcome to :scene:server
 
 The archive is online.  We will be ready for uploads soon. 
 

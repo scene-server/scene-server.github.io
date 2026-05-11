@@ -1,5 +1,6 @@
 ---
-title: "The Scene Keywords"
+title: "Archive Keywords"
 description: "A scattered archive of keywords from the collection."
 ---
-This text will appear above the scatter cloud because we used `{{ .Content }}` in the layout.
+
+** Currently Under Construction ** 

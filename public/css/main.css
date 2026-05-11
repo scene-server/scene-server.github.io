@@ -129,3 +129,30 @@ li::before {
 .stats {
     color: #555;
 }
+
+.scatter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.tag-item {
+    color: #00ff41; 
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 255, 65, 0.05);
+    transition: all 0.3s ease;
+}
+/* Scatter rotation logic */
+.tag-item:nth-child(3n) { transform: rotate(-3deg); font-size: 1.2rem; }
+.tag-item:nth-child(2n) { transform: rotate(2deg); font-size: 0.9rem; }
+
+.tag-item:hover {
+    background: #00ff41;
+    color: #000;
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 0 15px #00ff41;
+}

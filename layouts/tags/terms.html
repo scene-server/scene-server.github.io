@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <div class="md-content">
+    {{ .Content }}
+  </div>
+
+  <div class="scatter-grid">
+    {{- $rawTerms := slice -}}
+    
+    {{/* 1. Loop through your mp3_catalog */}}
+    {{- range .Site.Data.mp3_catalog -}}
+        
+        {{/* 2. Collect Artists and Albums since keywords aren't in the JSON */}}
+        {{- if .artist -}}
+            {{- $rawTerms = $rawTerms | append .artist -}}
+        {{- end -}}
+        
+        {{- if .album -}}
+            {{- $rawTerms = $rawTerms | append .album -}}
+        {{- end -}}
+        
+    {{- end -}}
+
+    {{/* 3. Cleanup: Unique and Alphabetical */}}
+    {{- $uniqueTerms := $rawTerms | uniq | sort -}}
+
+    {{/* 4. Render the Cloud */}}
+    {{ range $uniqueTerms }}
+        {{ if . }}
+            <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag-item">
+                {{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+  </div>
+
+  <style>
+    .scatter-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+    .tag-item {
+        color: #00ff41; 
+        text-decoration: none;
+        padding: 8px 12px;
+        border: 1px solid #333;
+        font-family: 'Courier New', Courier, monospace;
+        background: rgba(0, 255, 65, 0.05);
+        transition: all 0.3s ease;
+    }
+    /* Scatter rotation logic */
+    .tag-item:nth-child(3n) { transform: rotate(-3deg); font-size: 1.2rem; }
+    .tag-item:nth-child(2n) { transform: rotate(2deg); font-size: 0.9rem; }
+    
+    .tag-item:hover {
+        background: #00ff41;
+        color: #000;
+        transform: scale(1.1) rotate(0deg);
+        box-shadow: 0 0 15px #00ff41;
+    }
+  </style>
+{{ end }}

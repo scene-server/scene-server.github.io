@@ -14,11 +14,12 @@
         {{ .Content }}
 
         <ul>
-        {{ range .Pages.ByDate.Reverse }}
+        {{ range sort (index site.Data.recordings "recordings") "date" "desc" }}
             <li>
-                <a href="{{ .RelPermalink }}">
-                    {{ .Date.Format "2006-01-02" }} &nbsp;&nbsp; {{ .Title }}
+                <a href="{{ .url }}" target="_blank">
+                    {{ .date }} &nbsp;&nbsp; {{ .title }}
                 </a>
+                {{ if .duration }}<small>({{ .duration }})</small>{{ end }}
             </li>
         {{ end }}
         </ul>

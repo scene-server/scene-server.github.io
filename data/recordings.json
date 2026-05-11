@@ -1,0 +1,20 @@
+{
+  "recordings": [
+    {
+      "title": "Live Set - May 2025",
+      "date": "2025-05-10",
+      "url": "/audio/live-set-may2025.mp3",
+      "duration": "1h 12m",
+      "description": "Recorded at the basement session.",
+      "type": "live"
+    },
+    {
+      "title": "Podcast Episode 42",
+      "date": "2025-04-28",
+      "url": "/audio/podcast-42.mp3",
+      "duration": "48m",
+      "description": "Discussion about underground digital culture.",
+      "type": "podcast"
+    }
+  ]
+}

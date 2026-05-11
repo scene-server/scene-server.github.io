@@ -1,7 +1,4 @@
 ---
-title: Recordings
+title: Recordings Archive
 draft: false
 ---
-
-# recordings archive
-EOF

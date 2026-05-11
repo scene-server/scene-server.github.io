@@ -10,16 +10,27 @@
     <hr>
 
     <div class="terminal-content">
-        <h1>recordings</h1>
+        <h1>{{ .Title }}</h1>
         {{ .Content }}
 
-        <ul>
-        {{ range sort (index site.Data.recordings "recordings") "date" "desc" }}
-            <li>
-                <a href="{{ .url }}" target="_blank">
-                    {{ .date }} &nbsp;&nbsp; {{ .title }}
+        <ul class="recording-list">
+        {{ range .Site.Data.mp3_catalog }}
+            <li class="entry">
+                <a href="{{ .url }}" target="_blank" class="entry-link">
+                    <span class="file-name">[{{ .filename }}]</span> 
+                    <span class="entry-title">{{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}</span>
                 </a>
-                {{ if .duration }}<small>({{ .duration }})</small>{{ end }}
+                
+                <span class="label">LENGTH:</span> 
+                    {{ if .length_seconds }}
+                        {{ printf "%.2f" (div (float .length_seconds) 60) }} min
+                    {{ else }}
+                        unknown
+                    {{ end }}
+
+                {{ if .album }}
+                    <div class="sub-info">Release: {{ .album }}</div>
+                {{ end }}
             </li>
         {{ end }}
         </ul>

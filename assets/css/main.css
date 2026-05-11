@@ -102,3 +102,30 @@ li::before {
     color: #ff0000;
     text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
+
+.recording-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.entry {
+    margin-bottom: 1rem;
+    border-left: 2px solid #333;
+    padding-left: 10px;
+}
+
+.file-name {
+    color: #888;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.sub-info {
+    font-size: 0.85em;
+    color: #008f11; /* Dimmer green */
+    padding-left: 15px;
+}
+
+.stats {
+    color: #555;
+}

@@ -156,3 +156,9 @@ li::before {
     transform: scale(1.1) rotate(0deg);
     box-shadow: 0 0 15px #00ff41;
 }
+
+#eXTReMe-Free-mailboxd {
+    position: absolute !important;
+    left: -9999px !important;
+    white-space: nowrap !important;
+}

@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
+    <a href="/" style="
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #00ff00;
+    padding: 8px 12px;
+    background: #000;
+    color: #00ff00;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+">
+    <span style="font-size: 20px;">⌂</span> HOME</a>
+    
     {{ block "main" . }}{{ end }}
+
+    <div style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #00ff00;
+    padding: 2px;
+    background: #000;
+    line-height: 0;
+    z-index: 9999;
+">
+    <img src="/images/scene.png" alt="scene" style="
+        width: 100px; 
+        height: auto; 
+        display: block;
+    ">
+</div>
+    <script src="https://efreecode.com/js.js" id="eXF-mailboxd-1" async defer></script>
+
 </body>
 </html>

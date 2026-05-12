@@ -15,15 +15,15 @@
 ------------------------------------------------------------
 </pre>
 
-<form action="/upload-handler.php" method="POST" enctype="multipart/form-data" class="terminal-form">
-  <div class="input-group">
-    <label for="message">Say Something:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Enter metadata or comments..."></textarea>
-  </div>
-
+<form action="/api/upload/" method="POST" enctype="multipart/form-data" class="terminal-form">
   <div class="input-group">
     <label for="file">Source File:</label>
     <input type="file" id="file" name="audio_file">
+  </div>
+
+  <div class="input-group">
+    <label for="message">Say Something:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Enter metadata or comments..."></textarea>
   </div>
 
   <button type="submit" class="glitch-btn">

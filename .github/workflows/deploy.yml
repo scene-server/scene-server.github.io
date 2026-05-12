@@ -1,9 +1,19 @@
-name: Deploy Hugo to FTP
+name: Deploy Hugo to FTP and GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Set this to your default branch
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -12,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Fetch Hugo themes if they are submodules
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -21,7 +31,11 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # --- 1. BUILD & DEPLOY FOR FTP ---
+      - name: Build for FTP
         run: hugo --minify --baseURL "http://sceneserver.net/"
 
       - name: Deploy to FTP
@@ -33,3 +47,17 @@ jobs:
           local-dir: ./public/
           server-dir: /public_html/
           protocol: ftp
+
+      # --- 2. BUILD & DEPLOY FOR GITHUB PAGES ---
+      # This rebuilds with the correct GitHub URL to fix the 404/broken links
+      - name: Build for GitHub Pages
+        run: hugo --minify --baseURL "https://scene-server.github.io/"
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

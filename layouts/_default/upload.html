@@ -15,10 +15,11 @@
 ------------------------------------------------------------
 </pre>
 
-<form action="https://nifi.sceneserver.net:9999/upload/" method="POST" enctype="multipart/form-data" class="terminal-form">
+<form action="/api/upload/" method="POST" enctype="multipart/form-data" class="terminal-form">
   <div class="input-group">
     <label for="file">Source File:</label>
-    <input type="file" id="file" name="audio_file">
+    <!-- Changed name to 'audio_file' to stay consistent with your metadata intent -->
+    <input type="file" id="file" name="audio_file" required>
   </div>
 
   <div class="input-group">

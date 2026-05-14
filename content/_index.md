@@ -7,7 +7,7 @@ title: "Login"
 
 welcome to :scene:server
 
-The archive is online.  We will be ready for uploads soon. 
+The archive is online.  Upload testing in progress, please upload now. 
 
 * [VIEW RECORDINGS](/recordings)
 * [UPLOAD NEW](/upload)

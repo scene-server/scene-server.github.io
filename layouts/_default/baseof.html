@@ -103,18 +103,25 @@
 
 // ── AUDIO PLAYER ─────────────────────────────────────────────────────────────
 var _audio    = null;
+var _audioCtx = null;
+var _analyser = null;
+var _source   = null;
 var _specTick = null;
 var _specVals = null;
 var _specTgts = null;
 
 function playTrack(url, title, artist, btn) {
-    if (_audio) { _audio.pause(); _audio.src = ''; }
+    if (_source)  { try { _source.disconnect(); } catch(e) {} _source = null; }
+    if (_audio)   { _audio.pause(); _audio.src = ''; }
+    if (_specTick){ cancelAnimationFrame(_specTick); clearInterval(_specTick); _specTick = null; }
     document.querySelectorAll('.play-btn').forEach(function(b) {
         b.textContent = '►';
         b.classList.remove('playing');
     });
 
-    _audio = new Audio(url);
+    _audio = new Audio();
+    _audio.crossOrigin = 'anonymous';
+    _audio.src = url;
     _audio.play().catch(function() {});
 
     document.getElementById('player-title').textContent  = title;
@@ -155,7 +162,8 @@ function playerStop() {
         b.textContent = '►';
         b.classList.remove('playing');
     });
-    if (_specTick) { clearInterval(_specTick); _specTick = null; }
+    if (_source)  { try { _source.disconnect(); } catch(e) {} _source = null; }
+    if (_specTick){ cancelAnimationFrame(_specTick); clearInterval(_specTick); _specTick = null; }
 }
 
 function playerSeek(e) {
@@ -177,17 +185,85 @@ function _fmt(s) {
 }
 
 function _startSpectrum() {
-    var BARS = 48;
     var canvas = document.getElementById('spectrum-canvas');
     var ctx2   = canvas.getContext('2d');
-    _specVals  = [];
-    _specTgts  = [];
+
+    // Try real Web Audio oscilloscope
+    try {
+        if (!_audioCtx) {
+            _audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (_audioCtx.state === 'suspended') _audioCtx.resume();
+
+        if (!_analyser) {
+            _analyser = _audioCtx.createAnalyser();
+            _analyser.fftSize = 1024;
+            _analyser.smoothingTimeConstant = 0.8;
+            _analyser.connect(_audioCtx.destination);
+        }
+
+        _source = _audioCtx.createMediaElementSource(_audio);
+        _source.connect(_analyser);
+
+        _drawOscilloscope(canvas, ctx2);
+        return;
+    } catch(e) {
+        // CORS not ready — fall back to fake
+        _startFakeSpectrum(canvas, ctx2);
+    }
+}
+
+function _drawOscilloscope(canvas, ctx2) {
+    var bufLen  = _analyser.fftSize;
+    var dataArr = new Uint8Array(bufLen);
+
+    function draw() {
+        _specTick = requestAnimationFrame(draw);
+        if (!_audio || _audio.paused) {
+            // draw flat idle line
+            ctx2.clearRect(0, 0, canvas.width, canvas.height);
+            ctx2.lineWidth   = 1.5;
+            ctx2.strokeStyle = 'rgba(0,255,65,0.25)';
+            ctx2.shadowBlur  = 0;
+            ctx2.beginPath();
+            ctx2.moveTo(0, canvas.height / 2);
+            ctx2.lineTo(canvas.width, canvas.height / 2);
+            ctx2.stroke();
+            return;
+        }
+
+        _analyser.getByteTimeDomainData(dataArr);
+
+        ctx2.clearRect(0, 0, canvas.width, canvas.height);
+        ctx2.lineWidth   = 1.5;
+        ctx2.strokeStyle = '#00ff41';
+        ctx2.shadowBlur  = 6;
+        ctx2.shadowColor = 'rgba(0,255,65,0.7)';
+        ctx2.beginPath();
+
+        var sliceW = canvas.width / bufLen;
+        var x = 0;
+        for (var i = 0; i < bufLen; i++) {
+            var v = dataArr[i] / 128.0 - 1.0;
+            var y = canvas.height / 2 + v * (canvas.height / 2 - 2);
+            if (i === 0) ctx2.moveTo(x, y);
+            else         ctx2.lineTo(x, y);
+            x += sliceW;
+        }
+        ctx2.stroke();
+    }
+    draw();
+}
+
+function _startFakeSpectrum(canvas, ctx2) {
+    var BARS = 48;
+    _specVals = [];
+    _specTgts = [];
     for (var i = 0; i < BARS; i++) {
         _specVals[i] = 0.04 + Math.random() * 0.15;
         _specTgts[i] = 0.04 + Math.random() * 0.35;
     }
     if (_specTick) clearInterval(_specTick);
-
     _specTick = setInterval(function() {
         if (!_audio || _audio.paused) return;
         ctx2.clearRect(0, 0, canvas.width, canvas.height);

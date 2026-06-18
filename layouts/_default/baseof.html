@@ -6,8 +6,7 @@
     <title>{{ block "title" . }}{{ if .IsHome }}:scene:server v2.0{{ else }}{{ .Title }} | :scene:server{{ end }}{{ end }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    {{ $style := resources.Get "css/main.css" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="/css/main.css?v={{ now.Unix }}">
 </head>
 <body>
 

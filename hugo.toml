@@ -3,4 +3,4 @@ languageCode = 'en-us'
 title = ':scene:server'
 
 [params]
-    description = "digital basement archive v2.0 — built with claude"
+    description = "digital basement archive v2.0"

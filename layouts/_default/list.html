@@ -27,10 +27,10 @@
                     data-title="{{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}"
                     data-artist="{{ .artist }}"
                     onclick="playFromBtn(this)">&#9654;</button>
-                <a href="{{ .url }}" target="_blank" class="entry-link">
+                <span class="entry-link">
                     <span class="file-name">[{{ .filename }}]</span>
                     <span class="entry-title"> {{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}</span>
-                </a>
+                </span>
                 {{ if and .artist (ne .artist "Unknown") (ne .artist "no artist") }}
                     <span class="entry-artist">:: {{ .artist }}</span>
                 {{ end }}

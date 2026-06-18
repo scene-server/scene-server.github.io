@@ -2,7 +2,7 @@
 title: "Login"
 ---
 
-**SCENESERVER V2.0 — BUILT WITH CLAUDE**
+**SCENESERVER V2.0**
 **CONNECTION ESTABLISHED...**
 
 welcome to :scene:server — digital basement archive

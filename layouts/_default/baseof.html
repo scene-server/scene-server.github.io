@@ -214,43 +214,42 @@ function _startSpectrum() {
 }
 
 function _drawOscilloscope(canvas, ctx2) {
+    var BARS    = 64;
     var bufLen  = _analyser.fftSize;
     var dataArr = new Uint8Array(bufLen);
+    var step    = Math.floor(bufLen / BARS);
+    var cy      = canvas.height / 2;
+    var bw      = (canvas.width / BARS) - 1;
 
     function draw() {
         _specTick = requestAnimationFrame(draw);
+        ctx2.clearRect(0, 0, canvas.width, canvas.height);
+
         if (!_audio || _audio.paused) {
-            // draw flat idle line
-            ctx2.clearRect(0, 0, canvas.width, canvas.height);
-            ctx2.lineWidth   = 1.5;
-            ctx2.strokeStyle = 'rgba(0,255,65,0.25)';
-            ctx2.shadowBlur  = 0;
-            ctx2.beginPath();
-            ctx2.moveTo(0, canvas.height / 2);
-            ctx2.lineTo(canvas.width, canvas.height / 2);
-            ctx2.stroke();
+            ctx2.fillStyle = 'rgba(0,255,65,0.18)';
+            ctx2.fillRect(0, cy - 1, canvas.width, 1);
             return;
         }
 
         _analyser.getByteTimeDomainData(dataArr);
 
-        ctx2.clearRect(0, 0, canvas.width, canvas.height);
-        ctx2.lineWidth   = 1.5;
-        ctx2.strokeStyle = '#00ff41';
-        ctx2.shadowBlur  = 6;
-        ctx2.shadowColor = 'rgba(0,255,65,0.7)';
-        ctx2.beginPath();
-
-        var sliceW = canvas.width / bufLen;
-        var x = 0;
-        for (var i = 0; i < bufLen; i++) {
-            var v = dataArr[i] / 128.0 - 1.0;
-            var y = canvas.height / 2 + v * (canvas.height / 2 - 2);
-            if (i === 0) ctx2.moveTo(x, y);
-            else         ctx2.lineTo(x, y);
-            x += sliceW;
+        for (var i = 0; i < BARS; i++) {
+            var lo = 128, hi = 128;
+            for (var j = 0; j < step; j++) {
+                var s = dataArr[i * step + j];
+                if (s < lo) lo = s;
+                if (s > hi) hi = s;
+            }
+            var yTop = cy + ((lo - 128) / 128.0) * cy;
+            var yBot = cy + ((hi - 128) / 128.0) * cy;
+            var barH = Math.max(2, yBot - yTop);
+            var amp  = (hi - lo) / 256.0;
+            var g    = Math.floor(60 + amp * 195);
+            ctx2.shadowBlur  = amp > 0.45 ? 7 : 0;
+            ctx2.shadowColor = '#00ff41';
+            ctx2.fillStyle   = 'rgb(0,' + g + ',0)';
+            ctx2.fillRect(i * (bw + 1), yTop, bw, barH);
         }
-        ctx2.stroke();
     }
     draw();
 }

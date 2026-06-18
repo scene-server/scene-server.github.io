@@ -337,7 +337,7 @@ li::before { content: "> "; color: #00aa33; }
     box-shadow: none;
 }
 
-.entry-link:hover { background: transparent; color: #afffcf; box-shadow: none; }
+.entry-link { cursor: default; }
 
 .file-name { color: #006622; font-size: 0.82em; }
 .entry-title { color: #00ff41; }

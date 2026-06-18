@@ -1,99 +1,62 @@
 {{ define "main" }}
-    <pre>
-   _____                                                               
-  / ___/________  ____  ___  ________  ______   _____  _____ 
-  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/ 
- ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /     
-/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      
-                                                               
-    </pre>
+<div class="page-wrap">
+    <pre class="ascii-banner">   _____
+  / ___/________  ____  ___  ________  ______   _____  _____
+  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/
+ ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /
+/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      </pre>
+
     <hr>
 
-    <div class="terminal-content">
+    <div class="terminal-window">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
 
         <div class="search-wrap">
-            <span class="prompt">QUERY:></span>
-            <input type="text" id="catalog-search" placeholder="Filter by artist, title, or filename..." autocomplete="off">
+            <span class="prompt">QUERY:&gt;</span>
+            <input type="text" id="catalog-search" placeholder="artist, title, filename..." autocomplete="off">
         </div>
-        
+
         <hr>
+
         <ul class="recording-list" id="recording-list">
         {{ range .Site.Data.mp3_catalog }}
             <li class="entry">
+                <button class="play-btn"
+                    data-url="{{ .url }}"
+                    data-title="{{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}"
+                    data-artist="{{ .artist }}"
+                    onclick="playFromBtn(this)">&#9654;</button>
                 <a href="{{ .url }}" target="_blank" class="entry-link">
-                    <span class="file-name">[{{ .filename }}]</span> 
-                    <span class="entry-title">{{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}</span>
+                    <span class="file-name">[{{ .filename }}]</span>
+                    <span class="entry-title"> {{ if eq .title "Unknown" }}{{ .artist }}{{ else }}{{ .title }}{{ end }}</span>
                 </a>
-                
-                <span class="label">LENGTH:</span> 
-                    {{ if .length_seconds }}
-                        {{ printf "%.2f" (div (float .length_seconds) 60) }} min
-                    {{ else }}
-                        unknown
-                    {{ end }}
-
+                {{ if and .artist (ne .artist "Unknown") (ne .artist "no artist") }}
+                    <span class="entry-artist">:: {{ .artist }}</span>
+                {{ end }}
+                {{ if .length_seconds }}
+                    <span class="entry-length">{{ printf "%.0f" (div (float .length_seconds) 60) }}m</span>
+                {{ end }}
                 {{ if .album }}
-                    <div class="sub-info">Release: {{ .album }}</div>
+                    <div class="sub-info">release: {{ .album }}</div>
                 {{ end }}
             </li>
         {{ end }}
         </ul>
         <span class="cursor"></span>
     </div>
+</div>
 
-    <style>
-        .search-wrap {
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        .prompt {
-            color: #00ff00;
-            margin-right: 10px;
-            font-weight: bold;
-        }
+<script>
+function playFromBtn(btn) {
+    playTrack(btn.dataset.url, btn.dataset.title, btn.dataset.artist, btn);
+}
 
-        #catalog-search {
-            background: transparent;
-            border: 1px solid #333;
-            border-bottom: 1px solid #00ff00;
-            color: #00ff00;
-            padding: 5px 10px;
-            width: 100%;
-            max-width: 500px;
-            font-family: inherit;
-        }
-
-        #catalog-search:focus {
-            outline: none;
-            border: 1px solid #00ff00;
-            box-shadow: 0 0 5px #00ff00;
-        }
-
-        /* Highlighting match (Optional) */
-        .hidden-entry {
-            display: none !important;
-        }
-    </style>
-
-    <script>
-        document.getElementById('catalog-search').addEventListener('input', function(e) {
-            const query = e.target.value.toLowerCase();
-            const entries = document.querySelectorAll('.entry');
-
-            entries.forEach(entry => {
-                const text = entry.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    entry.classList.remove('hidden-entry');
-                } else {
-                    entry.classList.add('hidden-entry');
-                }
-            });
-        });
-    </script>
-    <script src="https://efreecode.com/js.js" id="eXF-mailboxd-1" async defer></script>
+document.getElementById('catalog-search').addEventListener('input', function(e) {
+    var q = e.target.value.toLowerCase();
+    document.querySelectorAll('#recording-list .entry').forEach(function(entry) {
+        entry.classList.toggle('hidden-entry', q.length > 0 && !entry.textContent.toLowerCase().includes(q));
+    });
+});
+</script>
 {{ end }}

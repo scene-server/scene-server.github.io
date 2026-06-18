@@ -2,15 +2,13 @@
 title: "Login"
 ---
 
-**SCENESERVER V1.0.5 **
+**SCENESERVER V2.0 — BUILT WITH CLAUDE**
 **CONNECTION ESTABLISHED...**
 
-welcome to :scene:server
-
-The archive is online.  Upload testing in progress, please upload now. 
+welcome to :scene:server — digital basement archive
 
 * [VIEW RECORDINGS](/recordings)
 * [UPLOAD NEW](/upload)
-* [TAGS](/tags)
+* [BROWSE TAGS](/tags)
 
-> _READY._
+> _SYSTEM READY. HACK THE PLANET._

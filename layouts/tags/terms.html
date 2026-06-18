@@ -1,45 +1,32 @@
 {{ define "main" }}
-    <pre>
-   _____                                                               
-  / ___/________  ____  ___  ________  ______   _____  _____ 
-  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/ 
- ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /     
-/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      
-                                                               
-    </pre>
+<div class="page-wrap">
+    <pre class="ascii-banner">   _____
+  / ___/________  ____  ___  ________  ______   _____  _____
+  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/
+ ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /
+/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      </pre>
+
     <hr>
-    
-  <div class="md-content">
-    {{ .Content }}
-  </div>
 
-  <div class="scatter-grid">
-    {{- $rawTerms := slice -}}
-    
-    {{/* 1. Loop through your mp3_catalog */}}
-    {{- range .Site.Data.mp3_catalog -}}
-        
-        {{/* 2. Collect Artists and Albums since keywords aren't in the JSON */}}
-        {{- if .artist -}}
-            {{- $rawTerms = $rawTerms | append .artist -}}
-        {{- end -}}
-        
-        {{- if .album -}}
-            {{- $rawTerms = $rawTerms | append .album -}}
-        {{- end -}}
-        
-    {{- end -}}
+    <div class="terminal-window">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        <hr>
 
-    {{/* 3. Cleanup: Unique and Alphabetical */}}
-    {{- $uniqueTerms := $rawTerms | uniq | sort -}}
+        <div class="scatter-grid">
+            {{- $terms := slice -}}
+            {{- range .Site.Data.mp3_catalog -}}
+                {{- if .artist -}}{{- $terms = $terms | append .artist -}}{{- end -}}
+                {{- if .album  -}}{{- $terms = $terms | append .album  -}}{{- end -}}
+            {{- end -}}
+            {{- range ($terms | uniq | sort) -}}
+                {{- if . }}
+                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag-item">{{ . }}</a>
+                {{- end -}}
+            {{- end }}
+        </div>
 
-    {{/* 4. Render the Cloud */}}
-    {{ range $uniqueTerms }}
-        {{ if . }}
-            <a href="{{ "/tags/" | relURL }}{{ . | urlize }}/" class="tag-item">
-                {{ . }}
-            </a>
-        {{ end }}
-    {{ end }}
-  </div>
+        <span class="cursor"></span>
+    </div>
+</div>
 {{ end }}

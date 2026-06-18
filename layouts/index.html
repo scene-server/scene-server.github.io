@@ -1,59 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ .Site.Title }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    {{ $style := resources.Get "css/main.css" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-</head>
-<body>
-    <pre>
-   _____                                                               
-  / ___/________  ____  ___  ________  ______   _____  _____ 
-  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/ 
- ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /     
-/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      
-    </pre>
-    <a href="/" style="
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    border: 2px solid #00ff00;
-    padding: 1px 4px;
-    background: #000;
-    color: #00ff00;
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-">
-    <span style="font-size: 20px;">&#8962;</span> HOME</a>
-    <hr>
-    <div class="terminal-content">
-        {{ .Content }}
-        <span class="cursor"></span>
-    </div>
-    <hr>
-    <div style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: 2px solid #00ff00;
-    padding: 2px;
-    background: #000;
-    line-height: 0;
-    z-index: 9999;
-">
-    <img src="/images/scene.png" alt="scene" style="
-        width: 100px; 
-        height: auto; 
-        display: block;
-    ">
+{{ define "main" }}
+
+<div id="boot-overlay">
+    <div id="boot-output"></div>
+    <button id="boot-skip" onclick="skipBoot()">[ SKIP ]</button>
 </div>
-<script src="https://efreecode.com/js.js" id="eXF-mailboxd-1" async defer></script>
-</body>
-</html>
+
+<div class="page-wrap" id="main-content" style="display:none">
+    <pre class="ascii-banner">   _____
+  / ___/________  ____  ___  ________  ______   _____  _____
+  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/
+ ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /
+/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      </pre>
+
+    <div class="terminal-window">
+        {{ .Content }}
+    </div>
+</div>
+
+<script>
+var BOOT = [
+    '> POWERING ON...',
+    '> BIOS v2.0.0 ...... OK',
+    '> RAM CHECK ......... OK',
+    '> DETECTING STORAGE.. OK',
+    '> LOADING ARCHIVE SUBSYSTEM...',
+    '> NiFi PIPELINE ...... CONNECTED',
+    '> FTP SYNC ........... ACTIVE',
+    '> INDEXING CATALOG...',
+    '> {{ len .Site.Data.mp3_catalog }} RECORDINGS FOUND',
+    '> UPLOAD PORTAL ...... ARMED',
+    '> AUDIO ENGINE ....... READY',
+    '',
+    '> CONNECTION ESTABLISHED',
+    '> WELCOME TO :SCENE:SERVER V2.0',
+    '> HACK THE PLANET.',
+];
+
+var DELAYS = [60,80,90,85,100,110,90,120,160,95,85,40,220,310,420];
+
+function runBoot() {
+    var out = document.getElementById('boot-output');
+    var idx = 0;
+
+    function next() {
+        if (idx >= BOOT.length) { setTimeout(finishBoot, 700); return; }
+        var line = document.createElement('div');
+        line.className   = 'boot-line';
+        line.textContent = BOOT[idx];
+        out.appendChild(line);
+        out.scrollTop = out.scrollHeight;
+        setTimeout(next, (DELAYS[idx] || 100) + Math.random() * 50);
+        idx++;
+    }
+    next();
+}
+
+function finishBoot() {
+    var overlay = document.getElementById('boot-overlay');
+    var content = document.getElementById('main-content');
+    overlay.style.opacity = '0';
+    content.style.display = '';
+    setTimeout(function() { overlay.style.display = 'none'; }, 620);
+}
+
+function skipBoot() { finishBoot(); }
+
+document.addEventListener('DOMContentLoaded', runBoot);
+</script>
+
+{{ end }}

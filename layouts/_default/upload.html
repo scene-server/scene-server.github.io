@@ -1,120 +1,76 @@
 {{ define "main" }}
-    <pre>
-   _____                                                               
-  / ___/________  ____  ___  ________  ______   _____  _____ 
-  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/ 
- ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /     
-/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      
-                                                               
-    </pre>
+<div class="page-wrap">
+    <pre class="ascii-banner">   _____
+  / ___/________  ____  ___  ________  ______   _____  _____
+  \__ \/ ___/ _ \/ __ \/ _ \/ ___/ _ \/ ___/ | / / _ \/ ___/
+ ___/ / /__/  __/ / / /  __(__  )  __/ /   | |/ /  __/ /
+/____/\___/\___/_/ /_/\___/____/\___/_/    |___/\___/_/      </pre>
+
     <hr>
 
+    <div class="terminal-window">
 <pre>
-[system: :scene:server:portal:active]
+[system: :scene:server:upload:v2]
 [link: encrypted_uplink_established]
-------------------------------------------------------------
+[status: awaiting_payload]
 </pre>
+        <hr>
 
-<form action="https://nifi.sceneserver.net:9999/upload/" method="POST" enctype="multipart/form-data" class="terminal-form">
-  <div class="input-group">
-    <label for="file">Source File:</label>
-    <input type="file" id="file" name="audio_file">
-  </div>
+        <form action="https://nifi.sceneserver.net:9999/upload/" method="POST" enctype="multipart/form-data">
 
-  <div class="input-group">
-    <label for="message">Say Something:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Enter metadata or comments..."></textarea>
-  </div>
+            <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+                <span class="drop-icon">&#8679;</span>
+                <div class="drop-label">DRAG &amp; DROP AUDIO FILE</div>
+                <div class="drop-hint">or click to browse &mdash; mp3 wav ogg flac m4a aac</div>
+                <div class="drop-filename" id="drop-filename"></div>
+            </div>
 
-  <button type="submit" class="glitch-btn">
-    <span class="btn-text">EXECUTE:UPLOAD</span>
-    <span class="btn-flare"></span>
-  </button>
-</form>
+            <input type="file" id="file-input" name="audio_file" accept=".mp3,.wav,.ogg,.flac,.m4a,.aac" style="display:none">
 
-<pre>
-------------------------------------------------------------
-[status: awaiting_input]
-</pre>
+            <div class="upload-field">
+                <label for="upload-msg">// notes:</label>
+                <textarea id="upload-msg" name="message" rows="3" placeholder="artist, set name, date, any notes..."></textarea>
+            </div>
 
-<style>
-  .terminal-form {
-    background: transparent;
-    color: #00ff00;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 600px;
-  }
+            <button type="submit" class="execute-btn">
+                EXECUTE:UPLOAD
+                <span class="btn-flare"></span>
+            </button>
 
-  .input-group {
-    margin-bottom: 20px;
-  }
+        </form>
+    </div>
+</div>
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+<script>
+var dz        = document.getElementById('drop-zone');
+var fileInput = document.getElementById('file-input');
 
-  textarea, input[type="file"] {
-    width: 100%;
-    background: #111;
-    border: 1px solid #00ff00;
-    color: #00ff00;
-    padding: 10px;
-    font-family: inherit;
-  }
+dz.addEventListener('dragover',  function(e) { e.preventDefault(); dz.classList.add('dragover'); });
+dz.addEventListener('dragleave', function()  { dz.classList.remove('dragover'); });
 
-  textarea:focus {
-    outline: none;
-    box-shadow: 0 0 10px #00ff00;
-  }
+dz.addEventListener('drop', function(e) {
+    e.preventDefault();
+    dz.classList.remove('dragover');
+    var file = e.dataTransfer.files[0];
+    if (!file) return;
+    // Push dropped file into the real input so the form picks it up
+    try {
+        var dt = new DataTransfer();
+        dt.items.add(file);
+        fileInput.files = dt.files;
+    } catch(ex) {}
+    showFile(file);
+});
 
-  /* The "Cooler" Upload Button */
-  .glitch-btn {
-    position: relative;
-    background: #00ff00;
-    color: #000;
-    border: none;
-    padding: 12px 30px;
-    font-weight: bold;
-    font-family: inherit;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.2s ease;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+fileInput.addEventListener('change', function() {
+    if (this.files.length) showFile(this.files[0]);
+});
 
-  .glitch-btn:hover {
-    background: #000;
-    color: #00ff00;
-    box-shadow: 0 0 15px #00ff00;
-    transform: translateY(-2px);
-  }
-
-  .glitch-btn:active {
-    transform: translateY(1px);
-  }
-
-  .btn-flare {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      transparent
-    );
-    transition: 0.5s;
-  }
-
-  .glitch-btn:hover .btn-flare {
-    left: 100%;
-  }
-</style>
-<span class="cursor"></span>
+function showFile(f) {
+    var mb = (f.size / 1024 / 1024).toFixed(2);
+    document.getElementById('drop-filename').textContent = '> ' + f.name + '  [' + mb + ' MB]';
+    dz.style.borderColor = '#00ff41';
+    dz.style.boxShadow   = '0 0 20px rgba(0,255,65,0.12)';
+}
+</script>
 {{ end }}

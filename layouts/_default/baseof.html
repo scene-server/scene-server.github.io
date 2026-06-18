@@ -1,50 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>{{ .Title }} | {{ site.Title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ if .IsHome }}:scene:server v2.0{{ else }}{{ .Title }} | :scene:server{{ end }}{{ end }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     {{ $style := resources.Get "css/main.css" }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
-    <a href="/" style="
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    border: 2px solid #00ff00;
-    padding: 1px 4px;
-    background: #000;
-    color: #00ff00;
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-">
-    <span style="font-size: 20px;">&#8962;</span> HOME</a>
-    
-    {{ block "main" . }}{{ end }}
 
-    <div style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: 2px solid #00ff00;
-    padding: 2px;
-    background: #000;
-    line-height: 0;
-    z-index: 9999;
-">
-    <img src="/images/scene.png" alt="scene" style="
-        width: 100px; 
-        height: auto; 
-        display: block;
-    ">
+<canvas id="matrix-canvas"></canvas>
+
+<div id="player-bar" class="player-bar hidden">
+    <div class="player-buttons">
+        <button class="player-btn" id="player-play-btn" onclick="playerToggle()">&#9654;</button>
+        <button class="player-btn" onclick="playerStop()">&#9632;</button>
+    </div>
+    <div class="player-center">
+        <div class="player-track-info">
+            <span class="player-track-name" id="player-title">--</span>
+            <span class="player-sep">::</span>
+            <span class="player-track-artist" id="player-artist">--</span>
+        </div>
+        <div class="player-progress-wrap" id="player-progress-wrap" onclick="playerSeek(event)">
+            <div class="player-progress-fill" id="player-progress-fill"></div>
+        </div>
+        <div class="player-time" id="player-time">0:00 / 0:00</div>
+    </div>
+    <canvas id="spectrum-canvas" width="200" height="44"></canvas>
 </div>
-    <script src="https://efreecode.com/js.js" id="eXF-mailboxd-1" async defer></script>
+
+<a href="/" class="nav-home">&#8962; HOME</a>
+
+<div class="scene-badge">
+    <img src="/images/scene.png" alt=":scene:">
+</div>
+
+{{ block "main" . }}{{ end }}
+
+<script src="https://efreecode.com/js.js" id="eXF-mailboxd-1" async defer></script>
+
+<script>
+// ── MATRIX RAIN ──────────────────────────────────────────────────────────────
+(function() {
+    var canvas = document.getElementById('matrix-canvas');
+    var ctx = canvas.getContext('2d');
+    var FONT = 14;
+    var CHARS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF';
+    var cols, drops;
+
+    function resize() {
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        cols  = Math.floor(canvas.width / FONT);
+        drops = [];
+        for (var i = 0; i < cols; i++) {
+            drops[i] = -Math.floor(Math.random() * (canvas.height / FONT));
+        }
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function rch() { return CHARS[Math.random() * CHARS.length | 0]; }
+
+    function tick() {
+        ctx.fillStyle = 'rgba(0,0,0,0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.font = FONT + 'px monospace';
+
+        for (var i = 0; i < cols; i++) {
+            if (drops[i] < 0) { drops[i]++; continue; }
+            var x = i * FONT;
+            var y = drops[i] * FONT;
+
+            ctx.fillStyle = '#d8ffd8';
+            ctx.fillText(rch(), x, y);
+
+            if (drops[i] >= 1) {
+                ctx.fillStyle = '#00ff41';
+                ctx.fillText(rch(), x, (drops[i] - 1) * FONT);
+            }
+            if (drops[i] >= 2) {
+                ctx.fillStyle = '#00cc33';
+                ctx.fillText(rch(), x, (drops[i] - 2) * FONT);
+            }
+            if (drops[i] >= 3) {
+                ctx.fillStyle = '#009922';
+                ctx.fillText(rch(), x, (drops[i] - 3) * FONT);
+            }
+
+            if (y > canvas.height && Math.random() > 0.975) {
+                drops[i] = -Math.floor(Math.random() * 15);
+            }
+            drops[i]++;
+        }
+    }
+
+    setInterval(tick, 45);
+})();
+
+// ── AUDIO PLAYER ─────────────────────────────────────────────────────────────
+var _audio    = null;
+var _specTick = null;
+var _specVals = null;
+var _specTgts = null;
+
+function playTrack(url, title, artist, btn) {
+    if (_audio) { _audio.pause(); _audio.src = ''; }
+    document.querySelectorAll('.play-btn').forEach(function(b) {
+        b.textContent = '►';
+        b.classList.remove('playing');
+    });
+
+    _audio = new Audio(url);
+    _audio.play().catch(function() {});
+
+    document.getElementById('player-title').textContent  = title;
+    document.getElementById('player-artist').textContent = artist;
+    document.getElementById('player-bar').classList.remove('hidden');
+    document.getElementById('player-play-btn').textContent = '⏸';
+
+    if (btn) { btn.textContent = '⏸'; btn.classList.add('playing'); }
+
+    _audio.addEventListener('timeupdate', _updateProg);
+    _audio.addEventListener('ended', function() {
+        document.getElementById('player-play-btn').textContent = '►';
+        if (btn) { btn.textContent = '►'; btn.classList.remove('playing'); }
+    });
+
+    _startSpectrum();
+}
+
+function playerToggle() {
+    if (!_audio) return;
+    if (_audio.paused) {
+        _audio.play();
+        document.getElementById('player-play-btn').textContent = '⏸';
+        _startSpectrum();
+    } else {
+        _audio.pause();
+        document.getElementById('player-play-btn').textContent = '►';
+    }
+}
+
+function playerStop() {
+    if (_audio) { _audio.pause(); _audio.src = ''; _audio = null; }
+    document.getElementById('player-play-btn').textContent = '►';
+    document.getElementById('player-bar').classList.add('hidden');
+    document.getElementById('player-progress-fill').style.width = '0%';
+    document.getElementById('player-time').textContent = '0:00 / 0:00';
+    document.querySelectorAll('.play-btn').forEach(function(b) {
+        b.textContent = '►';
+        b.classList.remove('playing');
+    });
+    if (_specTick) { clearInterval(_specTick); _specTick = null; }
+}
+
+function playerSeek(e) {
+    if (!_audio || !_audio.duration) return;
+    var rect = document.getElementById('player-progress-wrap').getBoundingClientRect();
+    _audio.currentTime = ((e.clientX - rect.left) / rect.width) * _audio.duration;
+}
+
+function _updateProg() {
+    if (!_audio || !_audio.duration) return;
+    var pct = (_audio.currentTime / _audio.duration) * 100;
+    document.getElementById('player-progress-fill').style.width = pct + '%';
+    document.getElementById('player-time').textContent = _fmt(_audio.currentTime) + ' / ' + _fmt(_audio.duration);
+}
+
+function _fmt(s) {
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+
+function _startSpectrum() {
+    var BARS = 48;
+    var canvas = document.getElementById('spectrum-canvas');
+    var ctx2   = canvas.getContext('2d');
+    _specVals  = [];
+    _specTgts  = [];
+    for (var i = 0; i < BARS; i++) {
+        _specVals[i] = 0.04 + Math.random() * 0.15;
+        _specTgts[i] = 0.04 + Math.random() * 0.35;
+    }
+    if (_specTick) clearInterval(_specTick);
+
+    _specTick = setInterval(function() {
+        if (!_audio || _audio.paused) return;
+        ctx2.clearRect(0, 0, canvas.width, canvas.height);
+        var bw = (canvas.width / BARS) - 1;
+        for (var i = 0; i < BARS; i++) {
+            if (Math.random() > 0.88) _specTgts[i] = 0.02 + Math.random() * 0.96;
+            _specVals[i] += (_specTgts[i] - _specVals[i]) * 0.18;
+            var h = _specVals[i] * canvas.height;
+            var g = Math.floor(_specVals[i] * 255);
+            ctx2.fillStyle = 'rgb(0,' + Math.min(255, g + 30) + ',' + Math.floor(g * 0.18) + ')';
+            ctx2.fillRect(i * (bw + 1), canvas.height - h, bw, h);
+        }
+    }, 40);
+}
+
+// ── GLITCH ────────────────────────────────────────────────────────────────────
+(function() {
+    function glitch() {
+        var el = document.querySelector('.ascii-banner');
+        if (!el) return;
+        var dx = (Math.random() - 0.5) * 7;
+        var dy = (Math.random() - 0.5) * 2;
+        el.style.transform   = 'translate(' + dx + 'px,' + dy + 'px)';
+        el.style.textShadow  = dx + 'px 0 #ff00ff,' + (-dx) + 'px 0 #00ffff,0 0 10px rgba(0,255,65,0.9)';
+        setTimeout(function() {
+            el.style.transform  = '';
+            el.style.textShadow = '';
+        }, 55 + Math.random() * 75);
+    }
+    setInterval(function() { if (Math.random() > 0.82) glitch(); }, 1800);
+})();
+</script>
 
 </body>
 </html>

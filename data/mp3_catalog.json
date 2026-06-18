@@ -35,13 +35,6 @@
         "length_seconds": 3960.08
     },
     {
-        "filename": "All Aboard - Live Mix - 05 - L.A. Williams.mp3",
-        "url": "https://sceneserver.net/data/All%20Aboard%20-%20Live%20Mix%20-%2005%20-%20L.A.%20Williams.mp3",
-        "title": "L.A. Williams",
-        "artist": "All Aboard",
-        "length_seconds": 86.45
-    },
-    {
         "filename": "Andrew Salazar - PromoMix2004.mp3",
         "url": "https://sceneserver.net/data/Andrew%20Salazar%20-%20PromoMix2004.mp3",
         "title": "Songs I LIke (Vol. 1)",
@@ -595,13 +588,6 @@
         "length_seconds": 2024.02
     },
     {
-        "filename": "Game Form - Live Mix - 12 - Joey Beltram.mp3",
-        "url": "https://sceneserver.net/data/Game%20Form%20-%20Live%20Mix%20-%2012%20-%20Joey%20Beltram.mp3",
-        "title": "Joey Beltram",
-        "artist": "Game Form",
-        "length_seconds": 66.8
-    },
-    {
         "filename": "Game Form 5-08 - Live Mix - 14 - Joey Beltram.mp3",
         "url": "https://sceneserver.net/data/Game%20Form%205-08%20-%20Live%20Mix%20-%2014%20-%20Joey%20Beltram.mp3",
         "title": "Joey Beltram",
@@ -614,13 +600,6 @@
         "title": "Joey Beltram (Robert Armani Remix)",
         "artist": "Game Form 6:28",
         "length_seconds": 342.76
-    },
-    {
-        "filename": "Gimme Head - Live Mix - 11 - Rotortype.mp3",
-        "url": "https://sceneserver.net/data/Gimme%20Head%20-%20Live%20Mix%20-%2011%20-%20Rotortype.mp3",
-        "title": "Rotortype",
-        "artist": "Gimme Head",
-        "length_seconds": 152.54
     },
     {
         "filename": "goodness2002.mp3",
@@ -822,7 +801,7 @@
         "filename": "MANN-ETREAVOR.mp3",
         "url": "https://sceneserver.net/data/MANN-ETREAVOR.mp3",
         "title": "The Calling",
-        "artist": "MANN-Ë TREAVOR",
+        "artist": "MANN-\u00cb TREAVOR",
         "length_seconds": 1731.85
     },
     {
@@ -959,13 +938,6 @@
         "length_seconds": 1801.2
     },
     {
-        "filename": "OGO - Live Mix - 01 - Joey Beltram.mp3",
-        "url": "https://sceneserver.net/data/OGO%20-%20Live%20Mix%20-%2001%20-%20Joey%20Beltram.mp3",
-        "title": "Joey Beltram",
-        "artist": "OGO",
-        "length_seconds": 72.99
-    },
-    {
         "filename": "Ohio Mix.mp3",
         "url": "https://sceneserver.net/data/Ohio%20Mix.mp3",
         "title": "Ohio Mix",
@@ -1036,13 +1008,6 @@
         "length_seconds": 1501.68
     },
     {
-        "filename": "Pump It - Live Mix - 13 - DJ Funk.mp3",
-        "url": "https://sceneserver.net/data/Pump%20It%20-%20Live%20Mix%20-%2013%20-%20DJ%20Funk.mp3",
-        "title": "DJ Funk",
-        "artist": "Pump It",
-        "length_seconds": 152.35
-    },
-    {
         "filename": "purple_unit_-_dnbnation_mix.mp3",
         "url": "https://sceneserver.net/data/purple_unit_-_dnbnation_mix.mp3",
         "title": "dnbnation.com mix",
@@ -1092,13 +1057,6 @@
         "length_seconds": 3840.02
     },
     {
-        "filename": "Runnin - Live Mix - 06 - DJ Milton.mp3",
-        "url": "https://sceneserver.net/data/Runnin%20-%20Live%20Mix%20-%2006%20-%20DJ%20Milton.mp3",
-        "title": "DJ Milton",
-        "artist": "Runnin",
-        "length_seconds": 93.42
-    },
-    {
         "filename": "saigon_loaded.mp3",
         "url": "https://sceneserver.net/data/saigon_loaded.mp3",
         "title": "Loaded Saturdays - System Soundbar",
@@ -1111,13 +1069,6 @@
         "title": "scottnelsen",
         "artist": "Unknown",
         "length_seconds": 4016.04
-    },
-    {
-        "filename": "Self Preservation - Live Mix - 03 - MD Connection.mp3",
-        "url": "https://sceneserver.net/data/Self%20Preservation%20-%20Live%20Mix%20-%2003%20-%20MD%20Connection.mp3",
-        "title": "MD Connection",
-        "artist": "Self Preservation",
-        "length_seconds": 62.15
     },
     {
         "filename": "servinitdeep.mp3",
@@ -1188,13 +1139,6 @@
         "title": "ss140605",
         "artist": "Elite Force (on the mix) with JDS",
         "length_seconds": 10823.97
-    },
-    {
-        "filename": "Steele_Tonght_TC.mp3",
-        "url": "https://sceneserver.net/data/Steele_Tonght_TC.mp3",
-        "title": "Steele_Tonght_TC",
-        "artist": "Unknown",
-        "length_seconds": 87.72
     },
     {
         "filename": "Steve Porter - Live at Space, Miami - 07_09_2005.mp3",
